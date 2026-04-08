@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Your Mate Agency</title>
+    <meta name="description" content="Case study from Your Mate Agency — websites, SEO, and digital solutions for regional Australian businesses.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Project | Your Mate Agency">
+    <meta property="og:description" content="Case study from Your Mate Agency — websites, SEO, and digital solutions for regional Australian businesses.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39CJ3GEM4P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39CJ3GEM4P');
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      .case-hero {
+        background: #000000;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .case-hero {
+          padding: 100px 1.5rem 3rem;
+        }
+      }
+
+      .case-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 96px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .case-hero-title {
+          font-size: 40px;
+        }
+      }
+
+      .case-hero-subtitle {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-align: right;
+        font-weight: 400;
+      }
+
+      @media (max-width: 768px) {
+        .case-hero-subtitle {
+          font-size: 16px;
+          text-align: left;
+          margin-top: 2rem;
+        }
+      }
+
+      .case-hero-image {
+        width: 100%;
+        display: block;
+      }
+
+      .case-hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .case-section {
+        padding: 6rem 5.75rem;
+      }
+
+      @media (max-width: 768px) {
+        .case-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .case-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .role-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .service-item {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .service-item:first-child {
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .service-header {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #000000;
+        padding: 1.25rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        .service-header {
+          font-size: 18px;
+          padding: 1rem 0;
+        }
+      }
+
+      .toggle-icon {
+        font-size: 1.25rem;
+        color: #666;
+      }
+
+      .stats-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .stats-container {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+
+      .stat-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .stat-number {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 120px;
+        font-weight: 700;
+        color: #2D9F5E;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      @media (max-width: 768px) {
+        .stat-number {
+          font-size: 72px;
+        }
+      }
+
+      .stat-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 0.5rem;
+        max-width: 280px;
+      }
+
+      @media (max-width: 768px) {
+        .stat-label {
+          font-size: 16px;
+        }
+      }
+
+      .stat-tbd {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 120px;
+        font-weight: 700;
+        color: #2D9F5E;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .stat-tbd-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .stat-tbd {
+          font-size: 72px;
+        }
+      }
+
+      .screenshots-section {
+        padding: 6rem 5.75rem;
+      }
+
+      @media (max-width: 1024px) {
+        .screenshots-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .screenshots-row-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .screenshots-row-1 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .screenshots-row-1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+      }
+
+      .screenshots-row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .screenshots-row-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .screenshots-row-2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+      }
+
+      .testimonial-quote {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 1.7;
+        color: #000000;
+        margin-bottom: 2rem;
+      }
+
+      .testimonial-quote p {
+        margin-bottom: 1.5rem;
+      }
+
+      .testimonial-quote p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-quote {
+          font-size: 20px;
+        }
+      }
+
+      .testimonial-author {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .testimonial-author-name {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      .testimonial-author-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        color: #666666;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+      }
+
+      .external-link {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .external-link:hover {
+        color: #2D9F5E;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .external-link {
+          font-size: 18px;
+        }
+      }
+
+      .more-work-section {
+        padding: 6rem 0 0 0;
+      }
+
+      .more-work-heading {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        letter-spacing: -0.02em;
+        padding: 0 5.75rem;
+      }
+
+      @media (max-width: 768px) {
+        .more-work-heading {
+          font-size: 48px;
+          padding: 0 1.5rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .more-work-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+
+      @media (max-width: 768px) {
+        .more-work-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .more-work-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .more-work-card img {
+        width: 100%;
+        aspect-ratio: 10 / 7;
+        object-fit: cover;
+        display: block;
+        transition: opacity 0.2s ease;
+      }
+
+      .more-work-card:hover img {
+        opacity: 0.9;
+      }
+
+      .more-work-card-info {
+        padding: 1.5rem 2rem 4rem 2rem;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .more-work-card-info h3 {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.01em;
+        color: #000000;
+        transition: color 400ms ease-out;
+      }
+
+      .more-work-card:hover .more-work-card-info h3 {
+        color: #2D9F5E;
+      }
+
+      .more-work-card-info p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #666666;
+      }
+
+      @media (max-width: 768px) {
+        .more-work-card-info {
+          padding: 1.25rem 1.5rem 2rem 1.5rem;
+        }
+
+        .more-work-card-info h3 {
+          font-size: 24px;
+        }
+
+        .more-work-card-info p {
+          font-size: 16px;
+        }
+      }
+
+      /* Loading state */
+      #page-content {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      #page-content.loaded {
+        opacity: 1;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <div id="page-content">
+      <section class="case-hero" style="background:#000">
+        <h1 class="case-hero-title" id="hero-title"></h1>
+        <p class="case-hero-subtitle" id="hero-subtitle"></p>
+      </section>
+
+      <div class="case-hero-image" id="hero-image-wrap" style="display:none">
+        <img id="hero-image" src="" alt="">
+      </div>
+
+      <div id="dynamic-sections"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu
+      var hamburger = document.getElementById('nav-hamburger');
+      var mobileMenu = document.getElementById('mobile-menu');
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+      document.querySelectorAll('.mobile-menu-nav a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      // Footer rotation — will be updated with project.footer_location
+      var footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      var footerLocationIndex = 0;
+      var footerLocationEl = document.getElementById('footer-location');
+      if (footerLocationEl) {
+        footerLocationEl.style.transition = 'opacity 500ms ease-in-out';
+        setInterval(function() {
+          footerLocationEl.style.opacity = '0';
+          setTimeout(function() {
+            footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+            footerLocationEl.textContent = footerLocations[footerLocationIndex];
+            footerLocationEl.style.opacity = '1';
+          }, 500);
+        }, 3000);
+      }
+
+      // Helpers
+      function esc(text) {
+        var div = document.createElement('div');
+        div.textContent = text || '';
+        return div.innerHTML;
+      }
+
+      // Extract slug from URL: /project/hammond-properties → hammond-properties
+      var pathParts = window.location.pathname.split('/').filter(Boolean);
+      var slug = pathParts.length >= 2 ? pathParts[pathParts.length - 1] : null;
+
+      if (!slug) {
+        window.location.href = '/work';
+      } else {
+        loadProject(slug);
+      }
+
+      function loadProject(slug) {
+        fetch('/api/projects/' + encodeURIComponent(slug))
+          .then(function(res) {
+            if (!res.ok) throw new Error('Not found');
+            return res.json();
+          })
+          .then(function(project) {
+            renderProject(project);
+            // Update meta tags
+            document.title = esc(project.name) + ' | Your Mate Agency';
+            var metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', 'Case study: ' + project.tagline + ' — Your Mate Agency');
+            var ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) ogTitle.setAttribute('content', project.name + ' — Your Mate Agency');
+            var ogDesc = document.querySelector('meta[property="og:description"]');
+            if (ogDesc) ogDesc.setAttribute('content', 'Case study: ' + project.tagline);
+            var ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute('content', 'https://yourmateagency.com.au/project/' + slug);
+            // Set footer location
+            if (project.footer_location && footerLocationEl) {
+              footerLocationEl.textContent = project.footer_location;
+            }
+          })
+          .catch(function() {
+            window.location.href = '/work';
+          });
+      }
+
+      function renderProject(project) {
+        // Hero
+        document.getElementById('hero-title').textContent = project.name.toUpperCase();
+        document.getElementById('hero-subtitle').textContent = project.tagline;
+
+        // Hero image
+        var heroSrc = project.hero_image_url || '/work/' + project.slug + '-hero.webp';
+        if (heroSrc) {
+          var heroWrap = document.getElementById('hero-image-wrap');
+          var heroImg = document.getElementById('hero-image');
+          heroImg.src = heroSrc;
+          heroImg.alt = project.name + ' website';
+          heroWrap.style.display = 'block';
+        }
+
+        var sections = document.getElementById('dynamic-sections');
+        var html = '';
+
+        // Overview
+        if (project.overview) {
+          var overviewParagraphs = project.overview.split('\n\n').map(function(p) {
+            return '<p>' + esc(p.trim()) + '</p>';
+          }).join('');
+
+          html += '<section class="case-section">' +
+            '<div class="two-column">' +
+              '<div class="section-label">OVERVIEW</div>' +
+              '<div class="section-content">' + overviewParagraphs + '</div>' +
+            '</div>' +
+          '</section>';
+        }
+
+        // YMA Role
+        if (project.roles && project.roles.length > 0) {
+          var roleItems = project.roles.map(function(role) {
+            return '<div class="service-item">' +
+              '<div class="service-header">' +
+                '<span>' + esc(role.toUpperCase()) + '</span>' +
+                '<span class="toggle-icon">+</span>' +
+              '</div>' +
+            '</div>';
+          }).join('');
+
+          html += '<section class="case-section case-section--no-top">' +
+            '<div class="two-column">' +
+              '<div class="section-label">YMA ROLE</div>' +
+              '<div class="section-content">' +
+                '<div class="role-list">' + roleItems + '</div>' +
+              '</div>' +
+            '</div>' +
+          '</section>';
+        }
+
+        // Results
+        var results = project.results || [];
+        if (results.length > 0) {
+          var resultsContent = '';
+          if (project.results_status === 'tbd') {
+            resultsContent = '<div class="stat-item">' +
+              '<span class="stat-tbd">TBD</span>' +
+              '<span class="stat-tbd-label">Just launched — watch this space.</span>' +
+            '</div>';
+          } else {
+            var statsItems = results.map(function(r) {
+              return '<div class="stat-item">' +
+                '<span class="stat-number">' + esc(r.stat) + '</span>' +
+                '<span class="stat-label">' + esc(r.description) + '</span>' +
+              '</div>';
+            }).join('');
+            resultsContent = '<div class="stats-container">' + statsItems + '</div>';
+          }
+
+          html += '<section class="case-section case-section--no-top">' +
+            '<div class="two-column">' +
+              '<div class="section-label">RESULTS</div>' +
+              '<div class="section-content">' + resultsContent + '</div>' +
+            '</div>' +
+          '</section>';
+        }
+
+        // Testimonial
+        if (project.testimonial_quote) {
+          var quoteText = project.testimonial_quote.split('\n\n').map(function(p) {
+            return '<p>' + esc(p.trim()) + '</p>';
+          }).join('');
+
+          html += '<section class="case-section case-section--no-top">' +
+            '<div class="two-column">' +
+              '<div class="section-label">TESTIMONIAL</div>' +
+              '<div class="section-content">' +
+                '<div class="testimonial-quote">' +
+                  '<p>"' + esc(project.testimonial_quote) + '"</p>' +
+                '</div>' +
+                '<div class="testimonial-author">' +
+                  '<span class="testimonial-author-name">' + esc(project.testimonial_name) + '</span>' +
+                  '<span class="testimonial-author-title">' + esc(project.testimonial_title) + '</span>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</section>';
+        }
+
+        // Screenshots
+        var screenshots = project.screenshot_urls || [];
+        if (screenshots.length > 0) {
+          var screenshotHtml = '<section class="screenshots-section">';
+          // Row 1: first 2 images
+          if (screenshots.length >= 2) {
+            screenshotHtml += '<div class="screenshots-row-1">' +
+              '<img src="' + esc(screenshots[0]) + '" alt="' + esc(project.name) + ' screenshot 1">' +
+              '<img src="' + esc(screenshots[1]) + '" alt="' + esc(project.name) + ' screenshot 2">' +
+            '</div>';
+          } else if (screenshots.length === 1) {
+            screenshotHtml += '<div class="screenshots-row-1">' +
+              '<img src="' + esc(screenshots[0]) + '" alt="' + esc(project.name) + ' screenshot 1">' +
+            '</div>';
+          }
+          // Row 2: remaining images in pairs
+          if (screenshots.length > 2) {
+            var remaining = screenshots.slice(2);
+            for (var i = 0; i < remaining.length; i += 2) {
+              screenshotHtml += '<div class="screenshots-row-2">';
+              screenshotHtml += '<img src="' + esc(remaining[i]) + '" alt="' + esc(project.name) + ' screenshot ' + (i + 3) + '">';
+              if (remaining[i + 1]) {
+                screenshotHtml += '<img src="' + esc(remaining[i + 1]) + '" alt="' + esc(project.name) + ' screenshot ' + (i + 4) + '">';
+              }
+              screenshotHtml += '</div>';
+            }
+          }
+          screenshotHtml += '</section>';
+          html += screenshotHtml;
+        }
+
+        // External link
+        if (project.live_url) {
+          html += '<section class="case-section">' +
+            '<div class="two-column">' +
+              '<div class="section-label">DON\'T TAKE MY WORD FOR IT</div>' +
+              '<div class="section-content">' +
+                '<a href="https://' + esc(project.live_url) + '" target="_blank" rel="noopener noreferrer" class="external-link">' + esc(project.live_url) + ' &rarr;</a>' +
+              '</div>' +
+            '</div>' +
+          '</section>';
+        }
+
+        // Divider + More Work
+        var moreWorkSlugs = project.more_work_slugs || [];
+        if (moreWorkSlugs.length > 0) {
+          html += '<div class="section-divider"></div>';
+          html += '<section class="more-work-section">' +
+            '<h2 class="more-work-heading">MORE WORK</h2>' +
+            '<div class="more-work-grid" id="more-work-grid"></div>' +
+          '</section>';
+        }
+
+        sections.innerHTML = html;
+
+        // Fade in
+        document.getElementById('page-content').classList.add('loaded');
+
+        // Load more work cards
+        if (moreWorkSlugs.length > 0) {
+          loadMoreWork(moreWorkSlugs);
+        }
+      }
+
+      function loadMoreWork(slugs) {
+        fetch('/api/projects')
+          .then(function(res) { return res.json(); })
+          .then(function(allProjects) {
+            var grid = document.getElementById('more-work-grid');
+            if (!grid) return;
+
+            var cardsHtml = slugs.map(function(s) {
+              var p = allProjects.find(function(proj) { return proj.slug === s; });
+              if (!p) return '';
+              var heroSrc = p.hero_image_url || '/work/' + p.slug + '-hero.webp';
+              return '<a href="/project/' + esc(p.slug) + '" class="more-work-card">' +
+                '<img src="' + esc(heroSrc) + '" alt="' + esc(p.name) + '">' +
+                '<div class="more-work-card-info">' +
+                  '<h3>' + esc(p.name).toUpperCase() + '</h3>' +
+                  '<p>' + esc(p.tagline) + '</p>' +
+                '</div>' +
+              '</a>';
+            }).join('');
+
+            grid.innerHTML = cardsHtml;
+          })
+          .catch(function() {});
+      }
+    </script>
+  </body>
+</html>

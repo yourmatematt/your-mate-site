@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile-First Websites - Why It Matters for Local Business | Your Mate Agency</title>
+    <meta name="description" content="Most local searches happen on phones. If your website doesn't work well on mobile, you're losing customers. Here's what mobile-first means for your business.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/mobile-first-local-business">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Mobile-First Websites - Why It Matters for Local Business | Your Mate Agency">
+    <meta property="og:description" content="Most local searches happen on phones. If your website doesn't work well on mobile, you're losing customers. Here's what mobile-first means for your business.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/mobile-first-local-business">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "Mobile-First Websites"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Mobile-First Websites - Why It Matters for Local Business",
+      "description": "Most local searches happen on phones. If your website doesn't work well on mobile, you're losing customers. Here's what mobile-first means for your business.",
+      "author": {
+        "@type": "Person",
+        "name": "Matt",
+        "url": "https://yourmateagency.com.au/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Your Mate Agency",
+        "url": "https://yourmateagency.com.au"
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourmateagency.com.au/blog/mobile-first-local-business"
+      },
+      "about": ["Mobile Web Design", "Local Business", "Small Business"],
+      "keywords": ["mobile-first design", "local business website", "mobile website", "responsive design", "local SEO"]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">MOBILE-FIRST WEBSITES - WHY IT MATTERS FOR LOCAL BUSINESS</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/websites" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Websites</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE REALITY</h2>
+        <div class="section-content">
+          <p>Picture this: someone's kitchen tap is leaking at 7pm on a Tuesday. Water's going everywhere. They're not going to fire up the laptop â€” they're grabbing their phone and searching "plumber near me" while holding a towel under the sink.</p>
+          <p>That's how most people find local businesses now. Over 60% of local searches happen on mobile phones, and for some industries it's closer to 70-80%. If your website doesn't work properly on a phone, you're invisible to most of your potential customers.</p>
+          <p>Mobile-first isn't a tech buzzword. It's just recognising how people actually behave in 2026.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT GOOGLE THINKS</h2>
+        <div class="section-content">
+          <p>Google switched to mobile-first indexing a few years back. In plain English: when Google decides where to rank your website, it looks at the mobile version first. If your mobile site is slow, hard to navigate, or missing content, that's what Google sees.</p>
+          <p>It doesn't matter if your desktop site looks fantastic. If the mobile experience is rubbish, your rankings suffer. And for local businesses, showing up in those "near me" searches is often the difference between getting calls and getting nothing.</p>
+          <p>This isn't about gaming an algorithm. It's about Google trying to show people websites that actually work on the devices they're using. Which makes sense, really.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">SPEED MATTERS</h2>
+        <div class="section-content">
+          <p>Here's the brutal truth: if your site takes more than three seconds to load on mobile, over half your visitors will leave. They'll hit the back button and tap the next result. Your competitor gets the call instead of you.</p>
+          <p>Mobile users are often on patchy connections â€” 4G that's not quite 4G, regional areas with dodgy coverage, or they're just impatient because they've got water spraying across their kitchen floor. They don't have time to wait for your site to load.</p>
+          <p>A fast mobile site isn't a luxury. It's the bare minimum. Every second of load time costs you customers.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">CLICK-TO-CALL</h2>
+        <div class="section-content">
+          <p>When someone finds your business on their phone, the most natural thing in the world is to tap your number and call you. That should work. Sounds obvious, but you'd be amazed how many business websites make this harder than it needs to be.</p>
+          <p>Your phone number should be a clickable link. Not an image. Not buried three pages deep. Right there, easy to spot, easy to tap. One touch and they're talking to you.</p>
+          <p>Same goes for your email and your address. Tap the email, it opens their mail app. Tap the address, it opens maps with directions. These tiny conveniences are the difference between someone calling you and someone giving up.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">MAPS INTEGRATION</h2>
+        <div class="section-content">
+          <p>For local businesses, Google Maps is where the action happens. When someone searches for what you do plus "near me," they often see the map pack before they see regular search results.</p>
+          <p>Your website and your Google Business Profile need to work together. Consistent name, address, phone number. Your website should link to your Google Maps listing. And when someone taps your address on mobile, it should open directions automatically.</p>
+          <p>People searching on mobile are often ready to act right now. Make it effortless for them to find you, get directions, and show up at your door.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THUMB-FRIENDLY DESIGN</h2>
+        <div class="section-content">
+          <p>People browse on their phones with their thumbs. Buttons need to be big enough to tap without accidentally hitting the wrong thing. Links can't be crammed together. Forms need to be simple â€” nobody wants to fill out ten fields on a tiny screen.</p>
+          <p>Menus that work beautifully on desktop can be a nightmare on mobile. Dropdown menus that require precision clicking, tiny hamburger icons, navigation buried at the bottom of the page â€” all of these drive people away.</p>
+          <p>Good mobile design feels effortless. You tap, things happen. No zooming, no squinting, no frustration. If using your site on a phone feels like work, people will find someone else.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">REAL SCENARIOS</h2>
+        <div class="section-content">
+          <p>Think about how people actually find local businesses. Someone's car breaks down â€” they search "mechanic near me" from the side of the road. Tourists arrive in town â€” they search "best coffee [town name]" while walking down the main street. A pipe bursts at midnight â€” emergency plumber search on the phone while standing in a puddle.</p>
+          <p>In all these situations, people need answers fast. They need to call someone, get directions, or find opening hours. They're not sitting at a desk with time to browse. They're in the moment, on their phone, ready to choose whoever makes it easiest.</p>
+          <p>If your competitor's site loads in two seconds with a big "Call Now" button, and yours takes eight seconds and requires pinching to find the phone number, who do you think gets the job?</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT TO DO</h2>
+        <div class="section-content">
+          <p>First, test your current site on your own phone. Not just a quick glance â€” actually try to use it. Can you find your phone number easily? Does it load quickly? Can you tap the buttons without zooming? Is the text readable without squinting?</p>
+          <p>If you're having a new site built, make sure mobile is the priority, not an afterthought. <a href="/blog/small-business-website-cost-australia">When you're investing in a website</a>, the mobile experience should be designed first and the desktop version built from that, not the other way around.</p>
+          <p>The good news is that mobile-first isn't complicated or expensive. It's just about building things the right way from the start. And for local businesses, getting it right means more calls, more customers, and more people walking through your door.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">&larr; Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

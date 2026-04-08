@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Marketing Basics for Small Business | Your Mate Agency</title>
+    <meta name="description" content="Honest guide to email marketing for small business. When it makes sense, simple setup, and what to actually send without being spam.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/email-marketing-small-business-basics">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Email Marketing for Small Business: The Basics That Actually Work | Your Mate Agency">
+    <meta property="og:description" content="Honest guide to email marketing for small business. When it makes sense, simple setup, and what to actually send without being spam.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/email-marketing-small-business-basics">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "Email Marketing for Small Business"}
+      ]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">EMAIL MARKETING FOR SMALL BUSINESS: THE BASICS THAT ACTUALLY WORK</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/running-your-business" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Running Your Business</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">DO YOU EVEN NEED IT?</h2>
+        <div class="section-content">
+          <p>Let's be honest. Email marketing for small business isn't always necessary.</p>
+          <p>If you're a local tradie who gets all your work from word of mouth and Google, you probably don't need an email newsletter. Your time is better spent doing good work and asking for reviews.</p>
+          <p>But if you're retail, hospitality, professional services, or you sell anything people buy more than once — email marketing makes sense. It keeps you in front of people without paying for ads every time.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">SIMPLE SETUP</h2>
+        <div class="section-content">
+          <p>You don't need anything fancy. The Mailchimp free tier is fine for most small businesses. It handles up to 500 contacts and 1,000 sends per month.</p>
+          <p>That's plenty to start with. Once you're actually using it and getting value, then you can think about upgrading.</p>
+          <p>Set up a basic signup form on your website. "Join our email list" with a name and email field. That's it. Don't ask for their birthday, their dog's name, and their favourite colour. Just name and email.</p>
+          <p>Stick it in your footer, on your contact page, maybe at checkout if you have an online store. Make it easy but not pushy.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT TO ACTUALLY SEND</h2>
+        <div class="section-content">
+          <p>This is where most people screw it up. They either send nothing, or they spam people every second day with "SALE! SALE! SALE!"</p>
+          <p>Here's what works. Send something useful occasionally. Once a month is fine. Once a fortnight if you've got good stuff to say.</p>
+          <p>Ideas that actually work: New products or services. Seasonal tips related to your business. Behind the scenes stuff. Customer stories. Local news if it's relevant. An actual sale or special offer — but not every time.</p>
+          <p>The key is this. Every email should give them something. Information, entertainment, or a genuine deal. Not just "hey, we still exist, buy stuff."</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">KEEPING IT SIMPLE</h2>
+        <div class="section-content">
+          <p>You don't need fancy templates. Mailchimp has basic ones that work fine. Pick one, stick with it. Consistent branding matters more than fancy design.</p>
+          <p>Write like you talk. Short sentences. No corporate speak. If you wouldn't say it to someone's face, don't put it in an email.</p>
+          <p>And for the love of god, test it before you send it. Click the links. Check it on your phone. Most people read emails on mobile, so if it looks like rubbish on a small screen, it's not going to work.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE NUMBERS THAT MATTER</h2>
+        <div class="section-content">
+          <p>Mailchimp will show you a bunch of stats. Most of them don't matter.</p>
+          <p>Open rate — Good if it's above 20%. Anything above 30% is great for a small business email newsletter.</p>
+          <p>Click rate — This is the one that matters. If people are clicking through to your website or offer, your email worked. 2-3% is decent. Above 5% is good.</p>
+          <p>Unsubscribes — Don't stress about them. If someone doesn't want your emails, you don't want them on your list. A few unsubscribes per send is normal.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHEN IT DOESN'T MAKE SENSE</h2>
+        <div class="section-content">
+          <p>If you're struggling to think of what to send, you probably don't need email marketing. That's fine. Not every business does.</p>
+          <p>If you have no way to collect emails naturally — like you don't have a website, you don't have a till where people check out, you don't have repeat customers — it's going to be a hard slog.</p>
+          <p>And if you're already flat out and don't have time to send an email once a month, don't start. A dead email list is worse than no email list. People will forget they signed up and mark you as spam when you finally send something six months later.</p>
+          <p>Focus on what's working. If <a href="/blog/social-media-strategy-small-business">social media is bringing you customers</a>, do more of that. Don't add email just because someone told you that you should.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">NEED HELP SETTING IT UP?</h2>
+        <div class="section-content">
+          <p>I can set up a basic email marketing system for your small business. Mailchimp account, signup forms on your site, a simple template, and show you how to actually use it.</p>
+          <p>Or if you've already got it set up but you're not sure if you're doing it right, I can have a look and tell you what's working and what's not.</p>
+          <p><a href="/contact">Get in touch here →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

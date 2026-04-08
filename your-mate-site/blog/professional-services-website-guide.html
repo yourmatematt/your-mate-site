@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websites for Professional Services | Your Mate Agency</title>
+    <meta name="description" content="How professional services build trust and credibility online. Essential website features for accountants, lawyers, consultants, and other professionals.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/professional-services-website-guide">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Websites for Professional Services: Accountants, Lawyers, Consultants | Your Mate Agency">
+    <meta property="og:description" content="How professional services build trust and credibility online. Essential website features for accountants, lawyers, consultants, and other professionals.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/professional-services-website-guide">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "Professional Services Website Guide"}
+      ]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">WEBSITES FOR PROFESSIONAL SERVICES: ACCOUNTANTS, LAWYERS, CONSULTANTS</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/industry-guides" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Industry Guides</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">BUILDING TRUST ONLINE</h2>
+        <div class="section-content">
+          <p>When someone's looking for an accountant, lawyer, or consultant, they're not just buying a service. They're trusting you with their money, their business, or their legal situation.</p>
+          <p>Your website needs to answer one question: "Can I trust this person?"</p>
+          <p>That means no gimmicks, no hype, no stock photos of people in suits shaking hands. Just clear, honest information about who you are and what you do.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT CLIENTS LOOK FOR</h2>
+        <div class="section-content">
+          <p>Before someone picks up the phone to contact you, they're checking a few things.</p>
+          <p>Your qualifications — Are you actually qualified? What's your background? How long have you been doing this?</p>
+          <p>Your services — Do you do what they need? Are you a generalist or a specialist?</p>
+          <p>Your location — Are you local? Do you service their area? Can they meet you in person if needed?</p>
+          <p>Social proof — Do other people trust you? Reviews, testimonials, case studies.</p>
+          <p>If your website doesn't answer these questions clearly, they'll move on to someone else's site.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">ESSENTIAL PAGES</h2>
+        <div class="section-content">
+          <p>Services — List what you do. Be specific. "Tax returns for small business" is better than "Accounting services." If you specialize in something, say it clearly.</p>
+          <p>About / Credentials — This is where you build credibility. Your qualifications, experience, professional memberships. Keep it factual. No need to oversell yourself.</p>
+          <p>Contact — Phone, email, address if you have an office. Make it easy for people to reach you. If you offer initial consultations, mention that here.</p>
+          <p>That's the foundation. Everything else is optional.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">TESTIMONIALS AND CASE STUDIES</h2>
+        <div class="section-content">
+          <p>Social proof matters. A lot.</p>
+          <p>Testimonials from real clients carry weight. Not "John was great!" but "John helped us restructure our business and saved us $15k in tax."</p>
+          <p>Case studies work even better. Describe a problem, what you did, and the outcome. Keep it anonymous if you need to, but make it specific.</p>
+          <p>If you're just starting out and don't have testimonials yet, that's fine. Don't make them up. Just focus on being clear about your services and credentials.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">PROFESSIONAL WITHOUT BEING BORING</h2>
+        <div class="section-content">
+          <p>Your website should look professional. Clean, easy to read, no clutter.</p>
+          <p>But professional doesn't mean boring. It doesn't mean grey backgrounds and corporate stock photos.</p>
+          <p>Good typography, good spacing, a clear layout — that's what makes a site look professional. Not trying to look like a law firm from 2005.</p>
+          <p>And you can have a personality. If you're an accountant who specializes in tradies, talk like you work with tradies. If you're a consultant for small retail businesses, talk like you understand small retail businesses.</p>
+          <p>People hire people. Let them see who you are.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">LOCAL SEO</h2>
+        <div class="section-content">
+          <p>Most professional services are local. People want an accountant in their town, a lawyer they can meet with, a consultant who understands their area.</p>
+          <p>That means local SEO is critical. When someone searches "accountant Bairnsdale" or "business lawyer Gippsland," you want to show up.</p>
+          <p>How? Your website needs to mention your location naturally. Your Google Business Profile needs to be set up properly. Your NAP (Name, Address, Phone) needs to be consistent across the web.</p>
+          <p>It's not complicated, but it needs to be done right. More on that here: <a href="/blog/google-maps-local-business">How to Show Up on Google Maps</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">COMPLIANCE CONSIDERATIONS</h2>
+        <div class="section-content">
+          <p>Depending on your profession, you might need specific disclaimers or compliance statements on your website.</p>
+          <p>Lawyers — Most jurisdictions require disclosure of liability limitations, jurisdiction info, and disclaimers about not creating a client relationship.</p>
+          <p>Accountants — Tax agent disclaimers, professional body memberships, and terms of service.</p>
+          <p>Financial advisors — ASIC compliance, disclosure statements, licensing info.</p>
+          <p>I'm not a lawyer, so I can't give you legal advice. But I can build these pages into your site properly and make sure they're easy to find when needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHY BOTHER?</h2>
+        <div class="section-content">
+          <p>You might be thinking: "I get most of my clients through referrals. Do I really need a website?"</p>
+          <p>Yes. Because even when someone refers you, the first thing they'll do is Google you.</p>
+          <p>If you don't have a website, or if your website looks like it hasn't been updated since 2012, it raises questions.</p>
+          <p>A good website doesn't replace referrals. It supports them. It gives people confidence that you're legitimate, professional, and still in business.</p>
+          <p>More on this: <a href="/blog/why-business-needs-website-2026">Why Your Business Needs a Website in 2026</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">NEED A WEBSITE?</h2>
+        <div class="section-content">
+          <p>I build clean, professional websites for accountants, lawyers, consultants, and other professional services across regional Victoria.</p>
+          <p>No templates. No bloat. Just a fast, mobile-friendly site that builds trust and makes it easy for clients to contact you.</p>
+          <p><a href="/contact">Get in touch →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

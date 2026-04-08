@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordPress vs HTML Website: Which Should You Choose? | Your Mate Agency</title>
+    <meta name="description" content="WordPress vs HTML? A no-BS comparison of static websites and WordPress for small businesses. Speed, security, cost, and maintenance compared.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/wordpress-vs-html-website">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="WordPress vs HTML Website: Which Should You Choose? | Your Mate Agency">
+    <meta property="og:description" content="WordPress vs HTML? A no-BS comparison of static websites and WordPress for small businesses. Speed, security, cost, and maintenance compared.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/wordpress-vs-html-website">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "WordPress vs HTML Website"}
+      ]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      .comparison-table {
+        overflow-x: auto;
+        margin: 2rem 0;
+      }
+
+      .comparison-table table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+      }
+
+      .comparison-table thead tr {
+        background: #000;
+        color: #fff;
+      }
+
+      .comparison-table th {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid #e0e0e0;
+        font-weight: 600;
+      }
+
+      .comparison-table th:first-child {
+        text-align: left;
+      }
+
+      .comparison-table th:not(:first-child) {
+        text-align: center;
+      }
+
+      .comparison-table td {
+        padding: 1rem;
+        border: 1px solid #e0e0e0;
+        line-height: 1.5;
+      }
+
+      .comparison-table tbody tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+
+      .comparison-table tbody tr:hover {
+        background: #f5f5f5;
+      }
+
+      .comparison-table td:first-child {
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .comparison-table {
+          font-size: 14px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">WORDPRESS VS HTML WEBSITE: WHICH SHOULD YOU CHOOSE?</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/comparisons" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Comparisons</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE SHORT VERSION</h2>
+        <div class="section-content">
+          <p>WordPress is a content management system. HTML is just code. WordPress is flexible but needs constant updates and maintenance. HTML sites are faster, more secure, but less flexible for content changes.</p>
+          <p>If you're publishing new content daily or weekly, WordPress makes sense. If you're a local business with a simple site that rarely changes? HTML is probably the better choice.</p>
+          <p>Let me break it down properly.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE COMPARISON</h2>
+        <div class="section-content">
+          <p>Here's what actually matters when you're choosing between WordPress and a static HTML website.</p>
+
+          <div class="comparison-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>WordPress</th>
+                  <th>HTML/Static</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Speed</td>
+                  <td>Slower (database queries on every page load)</td>
+                  <td>Lightning fast (pre-built pages served instantly)</td>
+                </tr>
+                <tr>
+                  <td>Security</td>
+                  <td>Requires constant updates, plugins are vulnerability targets</td>
+                  <td>Minimal attack surface, nothing to hack</td>
+                </tr>
+                <tr>
+                  <td>Maintenance</td>
+                  <td>Weekly updates, plugin compatibility checks, backups</td>
+                  <td>Almost none once it's built</td>
+                </tr>
+                <tr>
+                  <td>Cost (ongoing)</td>
+                  <td>Hosting $10-50/month, security, maintenance fees</td>
+                  <td>Hosting $5-15/month, minimal ongoing costs</td>
+                </tr>
+                <tr>
+                  <td>Ease of updates</td>
+                  <td>Edit content through admin panel, no code needed</td>
+                  <td>Need developer or basic HTML knowledge</td>
+                </tr>
+                <tr>
+                  <td>Flexibility</td>
+                  <td>Thousands of themes and plugins available</td>
+                  <td>Custom built to your exact needs</td>
+                </tr>
+                <tr>
+                  <td>Hosting options</td>
+                  <td>Requires PHP and MySQL database server</td>
+                  <td>Can host anywhere, even free services</td>
+                </tr>
+                <tr>
+                  <td>Best for</td>
+                  <td>Blogs, ecommerce, sites with frequent content updates</td>
+                  <td>Business sites, portfolios, landing pages</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WORDPRESS EXPLAINED</h2>
+        <div class="section-content">
+          <p>WordPress powers about 43% of all websites. It's a content management system (CMS) that lets you build and manage a website through a browser-based admin panel.</p>
+          <p>You log in, click buttons, write content, upload images. No code required for basic stuff.</p>
+          <p>Behind the scenes, WordPress uses PHP and a MySQL database. Every time someone visits your site, WordPress queries the database, assembles the page, and serves it to the visitor.</p>
+          <p><strong>The pros:</strong></p>
+          <p>It's accessible. You can manage your own content without calling a developer every time you want to change a heading.</p>
+          <p>There are thousands of plugins that add functionality — contact forms, SEO tools, ecommerce, bookings, whatever you need. Someone's probably built it.</p>
+          <p>It scales well if you're publishing lots of content. Add new posts or pages through the admin panel, and they integrate automatically with your navigation and archives.</p>
+          <p><strong>The cons:</strong></p>
+          <p>It's slow. All those database queries add up. You can cache it, optimise it, throw money at hosting — but a static site will always be faster.</p>
+          <p>Security is a constant issue. WordPress itself is pretty secure these days, but plugins are often dodgy. One vulnerable plugin and you're hacked. You need to stay on top of updates.</p>
+          <p>Maintenance is ongoing. Updates every week, plugin compatibility checks, backups, <a href="/blog/website-security-basics-small-business">security monitoring</a>. It's not set-and-forget.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">HTML/STATIC EXPLAINED</h2>
+        <div class="section-content">
+          <p>A static HTML website is just files. HTML, CSS, JavaScript. No database, no server-side processing, no admin panel.</p>
+          <p>When someone visits your site, the server just sends them the files. That's it. No queries, no assembly, no processing.</p>
+          <p><strong>The pros:</strong></p>
+          <p>Speed. Static sites are ridiculously fast. Google loves fast sites. Users love fast sites. <a href="/blog/website-speed-slow-sites-lose-customers">Slow sites lose customers</a>.</p>
+          <p>Security. There's almost nothing to hack. No database to compromise, no login system to exploit, no plugins to target. You're serving files. That's it.</p>
+          <p>Hosting is cheap and flexible. You can host a static site anywhere. Netlify, Vercel, GitHub Pages — lots of free options. Or just cheap shared hosting. No special server requirements.</p>
+          <p>Low maintenance. Once it's built, it's done. No updates, no plugin conflicts, no compatibility issues. <a href="/blog/website-maintenance-what-happens-after-launch">Maintenance is minimal</a>.</p>
+          <p><strong>The cons:</strong></p>
+          <p>Updating content requires code knowledge or a developer. You can't just log in and change stuff. You need to edit the HTML files directly or have someone do it for you.</p>
+          <p>No built-in blog system, no built-in ecommerce, no built-in anything. Everything is custom built. That can be a pro or a con depending on your needs.</p>
+          <p>Not ideal for sites with frequent content updates. If you're publishing daily, editing HTML files gets tedious fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHEN WORDPRESS WINS</h2>
+        <div class="section-content">
+          <p>WordPress is genuinely the better choice for certain situations.</p>
+          <p>If you're running a blog with hundreds of posts, WordPress handles that beautifully. Categories, tags, archives, search — it's all built in.</p>
+          <p>If you're doing ecommerce with WooCommerce, WordPress makes sense. It's mature, well-supported, and handles complex product catalogues.</p>
+          <p>If you have multiple people updating content, WordPress user management is solid. Different permission levels, revision history, scheduled posts.</p>
+          <p>If you need to update content daily or weekly and don't want to touch code, WordPress lets you do that.</p>
+          <p>I don't build WordPress sites, but I'm not going to tell you it's terrible. For the right use case, it's excellent.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHEN HTML WINS</h2>
+        <div class="section-content">
+          <p>For most small business websites, static HTML is the better option.</p>
+          <p>If you're a cafe, a hairdresser, a tradie, a local service business — you probably have 5-10 pages. Home, About, Services, Contact, maybe a Gallery. That content doesn't change often.</p>
+          <p>If speed matters (and it should), static sites load instantly. That's better for SEO, better for user experience, better for conversions.</p>
+          <p>If you want minimal ongoing costs and maintenance, static sites are almost free to run once they're built.</p>
+          <p>If you value security and don't want to worry about getting hacked, static sites are way less vulnerable.</p>
+          <p>This is why I build HTML sites. For the businesses I work with — local businesses in East Gippsland — it's the right tool for the job.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHY I BUILD HTML</h2>
+        <div class="section-content">
+          <p>I used to build WordPress sites. I know WordPress inside out. But I stopped offering it because I got sick of the maintenance.</p>
+          <p>Every client needed updates. Plugin broke something. Theme needed updating. Site got hacked. Constant firefighting.</p>
+          <p>The businesses I work with don't need that. They need a simple, fast, secure site that just works. They update their content a few times a year at most.</p>
+          <p>So I switched to building custom HTML sites. I use modern frameworks that make development fast, but the output is pure HTML, CSS, and JavaScript. No bloat, no database, no CMS.</p>
+          <p>My clients get a faster site, lower hosting costs, better security, and almost zero maintenance. And when they do need updates, they message me and I make the changes. Simple.</p>
+          <p>It's not the right approach for everyone. But for small businesses? It's exactly what they need.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE BOTTOM LINE</h2>
+        <div class="section-content">
+          <p>There's no universal answer. It depends on what you need.</p>
+          <p>If you're publishing content regularly, need complex functionality, or want to manage your own content without touching code — WordPress is probably the right choice. Find a good developer, keep it updated, and you'll be fine.</p>
+          <p>If you're a small business with a simple site that doesn't change often, and you want speed, security, and low maintenance — static HTML is the better option.</p>
+          <p>Don't let anyone tell you there's only one right answer. Anyone who says "WordPress is always better" or "static sites are always better" is either selling you something or doesn't understand the nuances.</p>
+          <p>Choose the tool that fits your actual needs. Not what someone's trying to sell you.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">NOT SURE?</h2>
+        <div class="section-content">
+          <p>If you're still not sure which approach is right for your business, I'm happy to chat about it.</p>
+          <p>I'll tell you honestly whether a static site makes sense for you, or if you'd be better off with WordPress. I only build static sites, so if WordPress is genuinely the better fit, I'll tell you that.</p>
+          <p>No sales pitch. Just an honest assessment of what you actually need.</p>
+          <p><a href="/contact">Get in touch here →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Direct Booking Switch | Your Mate Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #000;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  .section { 
+    max-width: 680px; 
+    margin: 0 auto; 
+    padding: 64px 24px; 
+  }
+  .section.wide { max-width: 800px; }
+  .section.narrow { max-width: 580px; }
+
+  .logo {
+    background: #2D9F5E;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 3px;
+    display: inline-block;
+    letter-spacing: 0.04em;
+  }
+
+  .green { color: #2D9F5E; }
+
+  .divider {
+    width: 40px;
+    height: 3px;
+    background: #2D9F5E;
+    border-radius: 2px;
+    margin: 48px 0;
+  }
+
+  .full-divider {
+    width: 100%;
+    height: 1px;
+    background: #151515;
+  }
+
+  /* HERO */
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+  .hero .logo { margin-bottom: 48px; }
+  .hero .tag {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2D9F5E;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 7vw, 56px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    margin-bottom: 24px;
+  }
+  .hero .sub {
+    font-size: clamp(16px, 3vw, 20px);
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    max-width: 520px;
+    margin-bottom: 40px;
+  }
+  .hero .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .hero .price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2D9F5E;
+  }
+  .hero .price-note {
+    font-size: 16px;
+    color: rgba(255,255,255,0.4);
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #2D9F5E;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 40px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover { background: #258a4f; }
+  .cta-btn-small {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+  .guarantee-note {
+    font-size: 14px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 14px;
+  }
+
+  /* PAIN SECTION */
+  .pain h2 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  .pain p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  .pain .stat-callout {
+    background: #0a0a0a;
+    border-left: 3px solid #2D9F5E;
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* WHAT YOU GET */
+  .stack h2 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 48px;
+  }
+
+  .stack-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #151515;
+  }
+  .stack-item:last-child { border-bottom: none; }
+
+  .stack-item .item-tag {
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2D9F5E;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    min-width: 60px;
+    padding-top: 4px;
+  }
+
+  .stack-item .item-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .stack-item .item-content p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+  .stack-item .item-value {
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.25);
+    padding-top: 4px;
+    text-decoration: line-through;
+  }
+
+  /* TOTAL VALUE */
+  .value-total {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    margin: 48px 0;
+  }
+  .value-total .vt-stack {
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  .value-total .vt-crossed {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.25);
+    text-decoration: line-through;
+    margin-bottom: 8px;
+  }
+  .value-total .vt-price {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2D9F5E;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .value-total .vt-note {
+    font-size: 16px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* GUARANTEE */
+  .guarantee {
+    text-align: center;
+  }
+  .guarantee .g-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  .guarantee h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .guarantee p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* WHO THIS IS FOR */
+  .who h2 {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+  }
+  .who .check-list {
+    list-style: none;
+  }
+  .who .check-list li {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    padding: 12px 0;
+    padding-left: 32px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .who .check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2D9F5E;
+    font-weight: 700;
+  }
+
+  /* FAQ */
+  .faq h2 {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+  }
+  .faq-item {
+    border-bottom: 1px solid #151515;
+    padding: 24px 0;
+  }
+  .faq-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  .faq-item p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  /* FINAL CTA */
+  .final-cta {
+    text-align: center;
+    padding: 80px 24px;
+  }
+  .final-cta h2 {
+    font-size: clamp(28px, 6vw, 44px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .final-cta .sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 32px;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid #111;
+  }
+  .footer p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.25);
+    line-height: 1.8;
+  }
+  .footer a {
+    color: #2D9F5E;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="section hero">
+  <div class="logo">YMA</div>
+  <div class="tag">For regional accommodation owners</div>
+  <h1>Stop paying Booking.com to rent <span class="green">your own guests.</span></h1>
+  <p class="sub">The step-by-step toolkit to build a direct booking system, keep 100% of your revenue, and stop handing 15-20% to OTAs — without turning off your listings overnight.</p>
+  <div class="price-row">
+    <span class="price">$47</span>
+    <span class="price-note">One-time payment. Instant access.</span>
+  </div>
+  <a href="#" class="cta-btn">Get the Direct Booking Switch →</a>
+  <p class="guarantee-note">30-day money-back guarantee. No questions asked.</p>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- PAIN -->
+<div class="section pain">
+  <h2>You're full. You're busy. And you're still losing money.</h2>
+  <p>You've got a great property. Guests love it. You're booked out most weekends and packed every summer.</p>
+  <p>But somewhere between the guest finding you and the money hitting your account, 15-20% disappears. Booking.com. Expedia. Airbnb. Every single booking.</p>
+
+  <div class="stat-callout">
+    Booking.com spent $5.8 billion on Google Ads last year. Their entire business model is outranking your property on your own name — and charging you for the privilege.
+  </div>
+
+  <p>The worst part? Most of these guests were already looking for you. They searched your name, found a Booking.com listing, and booked there because your Google listing sent them there. Or because you don't have a website that takes bookings.</p>
+  <p>It's not a marketing problem. It's a plumbing problem. And the fix is simpler than you think.</p>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- WHAT YOU GET -->
+<div class="section stack wide">
+  <h2>What's inside the <span class="green">Direct Booking Switch</span></h2>
+
+  <div class="stack-item">
+    <div class="item-tag">Core</div>
+    <div class="item-content">
+      <h3>The Direct Booking Switch Blueprint</h3>
+      <p>Complete video training: how to set up a direct booking website, choose the right booking engine, and build a system that takes real bookings. No fluff, no theory — just the steps.</p>
+    </div>
+    <div class="item-value">$497</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 1</div>
+    <div class="item-content">
+      <h3>The "Dimmer Switch" Transition Plan</h3>
+      <p>Week-by-week schedule to reduce OTA dependence gradually. Run both in parallel so you never lose bookings. Includes rate parity strategy.</p>
+    </div>
+    <div class="item-value">$197</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 2</div>
+    <div class="item-content">
+      <h3>Fill-in-the-Blank Website Copy</h3>
+      <p>Homepage, rooms page, booking page, about page. Swap in your property details and you're done. Written specifically for accommodation businesses.</p>
+    </div>
+    <div class="item-value">$297</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 3</div>
+    <div class="item-content">
+      <h3>Commission Savings Calculator</h3>
+      <p>Plug in your numbers and see exactly what you'll save in year one. This is the tool that convinced a Mallacoota motel to make the switch — and save $25K/year.</p>
+    </div>
+    <div class="item-value">$97</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 4</div>
+    <div class="item-content">
+      <h3>Local SEO & GBP Setup Checklist</h3>
+      <p>The exact steps to get your property ranking in Google Maps and local search. Fix your Google listing so it sends guests to you — not to Booking.com.</p>
+    </div>
+    <div class="item-value">$197</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 5</div>
+    <div class="item-content">
+      <h3>Website Teardown Videos</h3>
+      <p>5 real regional accommodation websites broken down. What works, what doesn't, and what to steal for your own site.</p>
+    </div>
+    <div class="item-value">$147</div>
+  </div>
+
+  <div class="stack-item">
+    <div class="item-tag">Bonus 6</div>
+    <div class="item-content">
+      <h3>Direct Booking Tracking Dashboard</h3>
+      <p>Simple GA4 + spreadsheet setup so you can see exactly how many direct bookings are coming in and how much you're saving.</p>
+    </div>
+    <div class="item-value">$97</div>
+  </div>
+
+  <!-- VALUE TOTAL -->
+  <div class="value-total">
+    <div class="vt-stack">Total value</div>
+    <div class="vt-crossed">$1,529</div>
+    <div class="vt-price">$47</div>
+    <div class="vt-note">Less than the commission on a single night's stay.</div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="#" class="cta-btn">Get the Direct Booking Switch →</a>
+    <p class="guarantee-note">30-day money-back guarantee. No questions asked.</p>
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- GUARANTEE -->
+<div class="section guarantee">
+  <div class="g-icon">🤝</div>
+  <h2>The No-Worries Guarantee</h2>
+  <p>If the Direct Booking Switch isn't for you, email me within 30 days and I'll refund every cent. No questions, no hoops, no hard feelings. If it doesn't help, I don't want your money.</p>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- WHO THIS IS FOR -->
+<div class="section who">
+  <h2>This is for you if:</h2>
+  <ul class="check-list">
+    <li>You run a motel, B&B, holiday rental, or holiday park in regional Australia</li>
+    <li>Most of your bookings come through Booking.com, Expedia, or Airbnb</li>
+    <li>You're paying 15-20% in commissions and it's doing your head in</li>
+    <li>You don't have a website that takes direct bookings — or you have one that doesn't work</li>
+    <li>You want more direct bookings but don't know where to start</li>
+    <li>You'd rather spend a weekend setting this up than keep bleeding money</li>
+  </ul>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- FAQ -->
+<div class="section faq">
+  <h2>Questions</h2>
+
+  <div class="faq-item">
+    <h3>Do I need to turn off my OTA listings?</h3>
+    <p>No. The whole point of the "Dimmer Switch" method is that you run both in parallel. You gradually increase direct bookings while reducing OTA dependence over time. No cold turkey.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>I'm not tech-savvy. Can I still do this?</h3>
+    <p>Yes. Every step has a video walkthrough and the copy templates are fill-in-the-blank. If you can use email, you can do this. And if you get stuck, email me — I reply to every one.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How long does it take to set up?</h3>
+    <p>The whole system is designed to be implemented in a weekend. Some bits take 30 minutes (like fixing your Google listing), others take a few hours (like setting up the booking page).</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>I've been quoted $10-20K for a website. How is this $47?</h3>
+    <p>Those quotes are for someone to do it all for you. This is the toolkit to do it yourself. If you'd rather someone just handle the whole thing, I offer that too — but most people are surprised how straightforward it is once they see the steps.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What if I want you to just do it for me?</h3>
+    <p>I offer a done-for-you Direct Booking Switch service. Start with the toolkit — if you'd rather hand it over after seeing what's involved, just email me and we'll chat.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What if it doesn't work?</h3>
+    <p>30-day money-back guarantee. No questions. If it's not useful, I don't want your money.</p>
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- FINAL CTA -->
+<div class="section final-cta">
+  <h2>Stop renting your own guests.</h2>
+  <p class="sub">One weekend. One toolkit. Keep the commission.</p>
+  <a href="#" class="cta-btn">Get the Direct Booking Switch — $47 →</a>
+  <p class="guarantee-note">30-day money-back guarantee. No questions asked.</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>
+    <a href="https://yourmateagency.com.au">Your Mate Agency</a> — Mallacoota, VIC<br>
+    Built by Matt. Not by an algorithm.<br>
+    ABN visible on main site.
+  </p>
+</div>
+
+</body>
+</html>

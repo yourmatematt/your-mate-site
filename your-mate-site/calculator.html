@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Much Are You Paying Booking.com? | Your Mate Agency</title>
+    <meta name="description" content="Calculate how much commission you're paying Booking.com, Airbnb, and Expedia each year. Plug in your numbers — the result might sting a bit.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://yourmateagency.com.au/calculator">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="How Much Are You Paying Booking.com? | Your Mate Agency">
+    <meta property="og:description" content="Calculate how much commission you're paying OTAs each year. The result might sting a bit.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/calculator">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39CJ3GEM4P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39CJ3GEM4P');
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      /* Calculator page — dark background to match the tool's aesthetic */
+      .calc-page {
+        background: #000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+      }
+
+      .calc-container {
+        width: 100%;
+        max-width: 640px;
+        padding: 48px 24px 64px;
+      }
+
+      .calc-container h1 {
+        font-size: clamp(28px, 6vw, 44px);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+      .calc-container h1 .green { color: #2D9F5E; }
+
+      .calc-subtitle {
+        font-size: 18px;
+        color: rgba(255,255,255,0.6);
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .calc-field {
+        margin-bottom: 32px;
+      }
+
+      .calc-field label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.5);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+      }
+
+      .calc-field .input-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .calc-field .prefix {
+        position: absolute;
+        left: 16px;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+
+      .calc-field .suffix {
+        position: absolute;
+        right: 16px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+
+      .calc-field input[type="number"],
+      .calc-field input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      .calc-field input[type="number"] {
+        width: 100%;
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 8px;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 16px;
+        padding-left: 36px;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+      .calc-field input[type="number"]:focus {
+        border-color: #2D9F5E;
+      }
+      .calc-field input[type="number"]::-webkit-inner-spin-button,
+      .calc-field input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      .calc-field.no-prefix input[type="number"] {
+        padding-left: 16px;
+      }
+
+      .calc-slider-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .calc-slider-row input[type="range"] {
+        flex: 1;
+        height: 6px;
+        background: #222;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+      }
+      .calc-slider-row input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        background: #2D9F5E;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .calc-slider-row .slider-value {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        min-width: 64px;
+        text-align: right;
+      }
+
+      .calc-field .hint {
+        font-size: 13px;
+        color: rgba(255,255,255,0.3);
+        margin-top: 8px;
+      }
+
+      .calc-divider {
+        width: 100%;
+        height: 1px;
+        background: #222;
+        margin: 40px 0;
+      }
+
+      .calc-result {
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      .calc-result .result-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+      }
+
+      .calc-result .result-number {
+        font-size: clamp(48px, 12vw, 80px);
+        font-weight: 700;
+        color: #2D9F5E;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin-bottom: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .calc-result .result-sub {
+        font-size: 16px;
+        color: rgba(255,255,255,0.5);
+        margin-bottom: 32px;
+      }
+
+      .calc-result .result-breakdown {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      .calc-result .breakdown-item {
+        text-align: center;
+      }
+      .calc-result .breakdown-item .bd-number {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .calc-result .breakdown-item .bd-label {
+        font-size: 12px;
+        color: rgba(255,255,255,0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .calc-result .gut-punch {
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 8px;
+        padding: 24px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: rgba(255,255,255,0.7);
+        max-width: 480px;
+        margin: 0 auto 32px;
+      }
+      .calc-result .gut-punch strong {
+        color: #fff;
+      }
+      .calc-result .gut-punch .green {
+        color: #2D9F5E;
+        font-weight: 700;
+      }
+
+      .calc-cta-btn {
+        display: inline-block;
+        background: #2D9F5E;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 16px 32px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .calc-cta-btn:hover { background: #258a4f; }
+
+      /* Override footer on dark background */
+      .calc-page .footer {
+        background: #000;
+        border-top: 1px solid #222;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <main class="calc-page">
+      <div class="calc-container">
+        <h1>How much are you paying <span class="green">Booking.com?</span></h1>
+        <p class="calc-subtitle">Plug in your numbers. Takes 30 seconds. The result might sting a bit.</p>
+
+        <div class="calc-field">
+          <label>Average nightly rate</label>
+          <div class="input-wrap">
+            <span class="prefix">$</span>
+            <input type="number" id="rate" value="180" min="0" max="2000" oninput="calculate()">
+          </div>
+        </div>
+
+        <div class="calc-field no-prefix">
+          <label>Average stay (nights)</label>
+          <div class="input-wrap">
+            <input type="number" id="nights" value="2" min="1" max="30" oninput="calculate()">
+          </div>
+        </div>
+
+        <div class="calc-field">
+          <label>Bookings per week via OTAs</label>
+          <div class="calc-slider-row">
+            <input type="range" id="bookings" min="1" max="40" value="8" oninput="calculate(); document.getElementById('bookingsVal').textContent = this.value">
+            <span class="slider-value" id="bookingsVal">8</span>
+          </div>
+          <div class="hint">How many bookings come through Booking.com, Airbnb, Expedia etc per week</div>
+        </div>
+
+        <div class="calc-field">
+          <label>OTA commission rate</label>
+          <div class="calc-slider-row">
+            <input type="range" id="commission" min="5" max="25" value="15" oninput="calculate(); document.getElementById('commVal').textContent = this.value + '%'">
+            <span class="slider-value" id="commVal">15%</span>
+          </div>
+          <div class="hint">Booking.com is typically 15%. Expedia 15-20%. Airbnb ~14%.</div>
+        </div>
+
+        <div class="calc-divider"></div>
+
+        <div class="calc-result">
+          <div class="result-label">You're paying OTAs</div>
+          <div class="result-number" id="annualCost">$22,464</div>
+          <div class="result-sub">per year in commissions</div>
+
+          <div class="result-breakdown">
+            <div class="breakdown-item">
+              <div class="bd-number" id="perBooking">$54</div>
+              <div class="bd-label">Per booking</div>
+            </div>
+            <div class="breakdown-item">
+              <div class="bd-number" id="perWeek">$432</div>
+              <div class="bd-label">Per week</div>
+            </div>
+            <div class="breakdown-item">
+              <div class="bd-number" id="perMonth">$1,872</div>
+              <div class="bd-label">Per month</div>
+            </div>
+          </div>
+
+          <div class="gut-punch" id="gutPunch">
+            That's <strong class="green">$22,464</strong> a year going to OTAs — on guests who were already looking for you. Even shifting <strong>just half</strong> of those to direct bookings puts <strong class="green">$11,232</strong> back in your pocket.
+          </div>
+
+          <a href="/direct-booking-switch" class="calc-cta-btn">Fix this for $47 &rarr;</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-location">
+              <span class="footer-static">BUILT IN</span>
+              <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+              <span class="footer-static">BY YOUR MATE</span>
+              <span class="footer-static">MATT</span>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-abn">ABN: 37179872328</p>
+            <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+            <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+            <div class="footer-socials">
+              <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+                </svg>
+              </a>
+
+              <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Mobile menu
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      // Calculator
+      function calculate() {
+        const rate = parseFloat(document.getElementById('rate').value) || 0;
+        const nights = parseFloat(document.getElementById('nights').value) || 1;
+        const bookings = parseFloat(document.getElementById('bookings').value) || 0;
+        const commission = parseFloat(document.getElementById('commission').value) || 15;
+
+        const bookingValue = rate * nights;
+        const commissionPerBooking = bookingValue * (commission / 100);
+        const weekly = commissionPerBooking * bookings;
+        const monthly = weekly * 4.33;
+        const annual = weekly * 52;
+        const halfAnnual = annual / 2;
+
+        document.getElementById('perBooking').textContent = '$' + Math.round(commissionPerBooking).toLocaleString();
+        document.getElementById('perWeek').textContent = '$' + Math.round(weekly).toLocaleString();
+        document.getElementById('perMonth').textContent = '$' + Math.round(monthly).toLocaleString();
+        document.getElementById('annualCost').textContent = '$' + Math.round(annual).toLocaleString();
+
+        document.getElementById('gutPunch').innerHTML =
+          'That\'s <strong class="green">$' + Math.round(annual).toLocaleString() + '</strong> a year going to OTAs \u2014 on guests who were already looking for you. Even shifting <strong>just half</strong> of those to direct bookings puts <strong class="green">$' + Math.round(halfAnnual).toLocaleString() + '</strong> back in your pocket.';
+      }
+
+      calculate();
+
+      // Footer location rotation
+      const footerLocations = ['MALLACOOTA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

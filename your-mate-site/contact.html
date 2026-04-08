@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Get a Free Quote | Your Mate Agency</title>
+    <meta name="description" content="Ready to talk websites? Get in touch for a free, no-obligation quote. I'll tell you what you need — or what you don't. Call or email today.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/contact">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Contact | Get a Free Quote | Your Mate Agency">
+    <meta property="og:description" content="Ready to talk websites? Get in touch for a free, no-obligation quote. I'll tell you what you need — or what you don't. Call or email today.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/contact">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "name": "Contact Your Mate Agency",
+          "url": "https://yourmateagency.com.au/contact",
+          "mainEntity": {
+            "@type": "ProfessionalService",
+            "name": "Your Mate Agency",
+            "telephone": "+61478101521",
+            "email": "matt@yourmateagency.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Mallacoota",
+              "addressRegion": "VIC",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              {"@type": "Place", "name": "Gippsland"},
+              {"@type": "Place", "name": "East Gippsland"},
+              {"@type": "State", "name": "Victoria"}
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au"},
+            {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://yourmateagency.com.au/contact"}
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39CJ3GEM4P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39CJ3GEM4P');
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #000;
+        min-height: 100vh;
+      }
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        z-index: 100;
+      }
+      .nav-inner {
+        width: 100%;
+        padding: 1rem 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .nav-inner {
+          padding: 1rem 1.5rem;
+        }
+      }
+      .nav-logo {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        background: #2D9F5E;
+        padding: 0.75rem 3rem 0.75rem 1rem;
+        display: inline-block;
+        text-align: left;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        gap: 2.5rem;
+      }
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+      }
+      .nav-links a {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .nav-links a:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .nav-hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 0.5rem;
+      }
+      @media (max-width: 768px) {
+        .nav-hamburger {
+          display: flex;
+        }
+      }
+      .nav-hamburger span {
+        width: 24px;
+        height: 2px;
+        background: #fff;
+        transition: all 0.3s ease;
+      }
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        z-index: 99;
+        padding-top: 100px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
+      }
+      .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .mobile-menu-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+      }
+      .mobile-menu-nav a {
+        font-size: 32px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Hero */
+      .contact-hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: calc(2.5rem + 0.5rem + 1.25rem + 1.5rem);
+        padding-right: 2rem;
+      }
+      @media (max-width: 768px) {
+        .contact-hero {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          justify-content: flex-start;
+          padding-top: 25vh;
+        }
+      }
+      .contact-headline {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+      @media (min-width: 640px) {
+        .contact-headline { font-size: 44px; }
+      }
+      @media (min-width: 768px) {
+        .contact-headline { font-size: 96px; }
+      }
+      @media (min-width: 1024px) {
+        .contact-headline { font-size: 110px; }
+      }
+      .contact-tagline {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.5;
+        max-width: 500px;
+      }
+      @media (max-width: 768px) {
+        .contact-tagline {
+          font-size: 16px;
+        }
+      }
+      .contact-direct {
+        margin-top: 2rem;
+      }
+      .contact-direct a {
+        display: block;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .contact-direct-phone {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      .contact-direct-phone:hover {
+        color: #2D9F5E;
+      }
+      .contact-direct-email {
+        color: #999;
+        font-size: 18px;
+      }
+      .contact-direct-email:hover {
+        color: #2D9F5E;
+      }
+
+      /* Form section */
+      .contact-form-section {
+        background: #000000;
+        padding: 6rem 5.75rem;
+        position: relative;
+      }
+      .contact-form-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 5.75rem;
+        right: 5.75rem;
+        height: 2px;
+        background: #2D9F5E;
+      }
+      @media (max-width: 768px) {
+        .contact-form-section {
+          padding: 4rem 1.5rem;
+        }
+        .contact-form-section::before {
+          left: 1.5rem;
+          right: 1.5rem;
+        }
+      }
+      .contact-form-heading {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 3rem;
+      }
+      .contact-form {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .contact-form label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px 16px;
+        background: #000000;
+        border: 1px solid #e5e5e5;
+        border-radius: 6px;
+        color: #ffffff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: #737373;
+      }
+      .contact-form input:focus,
+      .contact-form select:focus,
+      .contact-form textarea:focus {
+        border-color: #2D9F5E;
+      }
+      .contact-form select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%23737373'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+      .contact-form select option {
+        background: #000000;
+        color: #ffffff;
+      }
+      .contact-form textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      .contact-form-submit {
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+        padding: 14px 32px;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease;
+        align-self: flex-start;
+      }
+      .contact-form-submit:hover {
+        background: #ffffff;
+        color: #000000;
+      }
+      .contact-form-submit:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .contact-form-success {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 1.5;
+      }
+      .contact-form-error {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        color: #DC143C;
+        margin-top: 0.5rem;
+      }
+      .contact-form-error a {
+        color: #258A4F;
+        text-decoration: none;
+      }
+      .contact-form-error a:hover {
+        opacity: 0.7;
+      }
+
+      /* Footer */
+      .footer {
+        background: #000000;
+        color: #ffffff;
+        padding: 4rem 5.75rem;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .footer-left {
+        flex: 1;
+      }
+      .footer-location {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .footer-static,
+      .footer-rotating {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      .footer-rotating {
+        color: #2D9F5E;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease;
+      }
+      .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+        padding-top: 1rem;
+      }
+      .footer-abn {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0;
+      }
+      .footer-email {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 300ms ease-out;
+      }
+      .footer-email:hover {
+        color: #2D9F5E;
+      }
+      .footer-phone {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 300ms ease-out;
+      }
+      .footer-phone:hover {
+        color: #2D9F5E;
+      }
+      .footer-socials {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .footer-social-link {
+        color: #ffffff;
+        transition: color 300ms ease-out, transform 300ms ease-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer-social-link:hover {
+        color: #2D9F5E;
+        transform: translateY(-2px);
+      }
+      .footer-social-link svg {
+        width: 24px;
+        height: 24px;
+      }
+      @media (max-width: 768px) {
+        .footer {
+          padding: 3rem 1.5rem;
+          min-height: 300px;
+        }
+        .footer-content {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .footer-static,
+        .footer-rotating {
+          font-size: 40px;
+        }
+        .footer-right {
+          align-items: flex-start;
+        }
+        .footer-abn,
+        .footer-email,
+        .footer-phone {
+          font-size: 16px;
+        }
+        .footer-socials {
+          margin-top: 1rem;
+        }
+        .footer-social-link svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <h1 class="sr-only">Contact Your Mate Agency — Free Quote for Gippsland Businesses</h1>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+      <div class="contact-headline" aria-hidden="true">CONTACT</div>
+      <div class="contact-tagline">
+        <div>I build what your business needs.</div>
+        <div>Not what makes me more money.</div>
+      </div>
+      <div class="contact-direct">
+        <a href="tel:+61478101521" class="contact-direct-phone">0478 101 521</a>
+        <a href="mailto:matt@yourmateagency.com.au" class="contact-direct-email">matt@yourmateagency.com.au</a>
+      </div>
+    </section>
+
+    <script>
+      var hamburger = document.getElementById('nav-hamburger');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+      function toggleMobileMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      }
+
+      hamburger.addEventListener('click', toggleMobileMenu);
+      mobileMenuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+        });
+      });
+    </script>
+
+    <section class="contact-form-section" id="contact-form-section">
+      <h2 class="contact-form-heading">Send a message</h2>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div>
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="cf-phone">Phone <span style="color: #737373; font-weight: 400;">(optional)</span></label>
+          <input type="tel" id="cf-phone" name="phone" placeholder="04XX XXX XXX">
+        </div>
+        <div>
+          <label for="cf-subject">Subject</label>
+          <select id="cf-subject" name="subject" required>
+            <option value="" disabled selected style="color: #737373;">Select a topic</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Website Project">Website Project</option>
+            <option value="SEO">SEO</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="What can I help with?" required></textarea>
+        </div>
+        <button type="submit" class="contact-form-submit" id="cf-submit">Send Message</button>
+        <div id="cf-error" class="contact-form-error" style="display: none;"></div>
+      </form>
+      <div id="cf-success" class="contact-form-success" style="display: none;">
+        Thanks mate, I'll be in touch soon.
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        var form = document.getElementById('contact-form');
+        var submitBtn = document.getElementById('cf-submit');
+        var errorEl = document.getElementById('cf-error');
+        var successEl = document.getElementById('cf-success');
+
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          errorEl.style.display = 'none';
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+
+          var formData = {
+            name: document.getElementById('cf-name').value.trim(),
+            email: document.getElementById('cf-email').value.trim(),
+            phone: document.getElementById('cf-phone').value.trim(),
+            subject: document.getElementById('cf-subject').value,
+            message: document.getElementById('cf-message').value.trim(),
+          };
+
+          if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            errorEl.textContent = 'Please fill in all required fields.';
+            errorEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+            return;
+          }
+
+          try {
+            var response = await fetch('/api/contact-form', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) throw new Error('Failed');
+
+            form.style.display = 'none';
+            successEl.style.display = 'block';
+          } catch (err) {
+            errorEl.innerHTML = 'Something went wrong — try emailing me directly at <a href="mailto:matt@yourmateagency.com.au">matt@yourmateagency.com.au</a>';
+            errorEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+          }
+        });
+      })();
+    </script>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var locations = ['MALLACOOTA', 'BAIRNSDALE', 'LAKES ENTRANCE', 'SALE', 'TRARALGON', 'ORBOST', 'PAYNESVILLE'];
+      var locationIndex = 0;
+      var footerLocation = document.getElementById('footer-location');
+
+      if (footerLocation) {
+        setInterval(function() {
+          locationIndex = (locationIndex + 1) % locations.length;
+          footerLocation.style.opacity = '0';
+          setTimeout(function() {
+            footerLocation.textContent = locations[locationIndex];
+            footerLocation.style.opacity = '1';
+          }, 300);
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI for Small Business: A Practical Guide (No Hype) | Your Mate Agency</title>
+    <meta name="description" content="Cut through the AI hype. What AI can actually do for your small business TODAY — ChatGPT for business, automation tools, and what's worth your time.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/ai-for-small-business-practical-guide">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="AI for Small Business: A Practical Guide (No Hype) | Your Mate Agency">
+    <meta property="og:description" content="Cut through the AI hype. What AI can actually do for your small business TODAY — ChatGPT for business, automation tools, and what's worth your time.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/ai-for-small-business-practical-guide">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "AI for Small Business: A Practical Guide"}
+      ]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">AI FOR SMALL BUSINESS: A PRACTICAL GUIDE</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/running-your-business" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Running Your Business</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE HYPE</h2>
+        <div class="section-content">
+          <p>Everyone's talking about AI like it's going to replace your entire workforce tomorrow. LinkedIn's full of "AI gurus" selling courses on how to 10x your business with robots.</p>
+          <p>Here's the reality: most of that is noise. But underneath the hype, there are a few genuinely useful things AI can do for small businesses right now.</p>
+          <p>I'm not going to sell you on some sci-fi future. I'm going to show you what actually works today, what it costs, and whether it's worth your time.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT IT IS</h2>
+        <div class="section-content">
+          <p>When people say "AI for business," they're usually talking about tools that use large language models — things like ChatGPT, Claude, or Gemini.</p>
+          <p>These are basically smart text prediction engines. You type something in, they spit something back. But they're good enough now that they can actually save you time on real tasks.</p>
+          <p>Not everything. Not the important stuff. But the repetitive, time-sucking admin work that keeps you from doing what you're actually good at.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT WORKS TODAY</h2>
+        <div class="section-content">
+          <p>Let's get specific. Here's what AI tools can actually do for a small business in 2025:</p>
+          <p>First draft content. Blog posts, social media captions, email newsletters. You still need to edit it and add your voice, but it gives you something to start with instead of staring at a blank page.</p>
+          <p>Answer common questions. Chatbots on your website that handle the "What are your hours?" and "Do you service my area?" questions so you don't have to. They're not perfect, but they filter out 80% of the basic stuff.</p>
+          <p>Automate admin tasks. Things like booking confirmations, follow-up emails, invoice reminders. Set it up once, forget about it.</p>
+          <p>Research and summarise. Need to understand a contract? Want a summary of customer feedback? AI can do the heavy lifting and give you the highlights.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE TOOLS</h2>
+        <div class="section-content">
+          <p>You don't need to spend thousands. Here's what's actually useful:</p>
+          <p>ChatGPT Plus — $20 USD a month. The most versatile. Good for content drafts, brainstorming, writing emails, explaining complicated stuff in simple terms.</p>
+          <p>Automated booking systems — Things like Calendly or Acuity have AI features built in now. They handle scheduling, send reminders, reschedule when people cancel. Saves hours every week.</p>
+          <p>AI-powered forms — Tools like Tally or Typeform can now ask follow-up questions based on what someone says. Makes your contact forms actually useful instead of just collecting names.</p>
+          <p>Customer service chatbots — If you get the same questions over and over, a simple chatbot on your website can handle them. I use tools like Crisp or Intercom for clients. Not expensive, actually works.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT NOT TO USE IT FOR</h2>
+        <div class="section-content">
+          <p>Here's where people get it wrong. AI is not good at:</p>
+          <p>Anything that requires your expertise. You're the expert in your business. AI doesn't understand your customers like you do. Use it to save time, not to replace your thinking.</p>
+          <p>Complex decisions. Don't let AI choose your pricing strategy or decide which suppliers to use. That's your job.</p>
+          <p>Anything customer-facing without human review. AI makes mistakes. Confident, convincing mistakes. Always check before it goes out.</p>
+          <p>Replacing human connection. People hire local businesses because they want to deal with real people. AI can handle the admin, but you still need to show up for the important conversations.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE REAL COST</h2>
+        <div class="section-content">
+          <p>Everyone talks about the monthly subscription cost. But the real cost is time.</p>
+          <p>Learning how to use these tools properly takes time. Setting up automation takes time. Fixing it when it breaks takes time.</p>
+          <p>For some businesses, it's worth it. For others, you're better off just doing it yourself or hiring someone.</p>
+          <p>Here's my rule: if a task takes you less than 5 minutes and you only do it once a week, don't automate it. The setup time isn't worth it.</p>
+          <p>But if you're spending 30 minutes a day on something repetitive — answering the same questions, sending the same emails, scheduling appointments — that's where AI and automation actually pays off.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">START HERE</h2>
+        <div class="section-content">
+          <p>If you want to try AI for your business, don't try to do everything at once. Pick one annoying task and solve that first.</p>
+          <p>Start with ChatGPT Plus. $20 a month. Use it for a week to draft your social media posts or write your email newsletters. See if it actually saves you time.</p>
+          <p>Then, if that works, look at automation. What are you doing manually every day that could be automated? Booking confirmations? Follow-up emails? Start there.</p>
+          <p>Don't buy a bunch of tools at once. Try one thing, see if it works, then add the next thing.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">NEED HELP?</h2>
+        <div class="section-content">
+          <p>I help small businesses in Gippsland and regional Victoria figure out which AI tools are actually worth using — and which ones are just hype.</p>
+          <p>No generic solutions. I look at your business, what you're actually spending time on, and tell you what's worth automating and what's not.</p>
+          <p>Sometimes the answer is "don't bother." Sometimes it's "here's how to save 5 hours a week." Either way, I'll be honest about it.</p>
+          <p><a href="/contact">Chat about AI for your business →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOLA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOLA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

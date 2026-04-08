@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design Gippsland | Your Mate Agency</title>
+    <meta name="description" content="Web design, SEO, and digital marketing for small businesses in Gippsland. No jargon, no upsells. Get a free quote today.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Web Design Gippsland | Your Mate Agency">
+    <meta property="og:description" content="Web design, SEO, and digital marketing for small businesses in Gippsland. No jargon, no upsells. Get a free quote today.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39CJ3GEM4P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39CJ3GEM4P');
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Your Mate Agency",
+      "alternateName": "YMA",
+      "url": "https://yourmateagency.com.au",
+      "logo": "https://yourmateagency.com.au/favicon/yma-og.png",
+      "image": "https://yourmateagency.com.au/favicon/yma-og.png",
+      "description": "Web design, SEO, and digital marketing for small businesses in regional Victoria. Based in Mallacoota, East Gippsland.",
+      "telephone": "+61478101521",
+      "email": "matt@yourmateagency.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mallacoota",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -37.5567,
+        "longitude": 149.7561
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Victoria",
+          "sameAs": "https://en.wikipedia.org/wiki/Victoria_(state)"
+        },
+        {
+          "@type": "Place",
+          "name": "East Gippsland"
+        },
+        {
+          "@type": "Place",
+          "name": "Gippsland"
+        }
+      ],
+      "serviceType": ["Web Design", "SEO", "Content Marketing", "AI Automation", "Google Business Profile Optimisation"],
+      "priceRange": "$$",
+      "founder": {
+        "@type": "Person",
+        "name": "Matt",
+        "jobTitle": "Founder"
+      },
+      "sameAs": [
+        "https://www.facebook.com/yourmateagency",
+        "https://www.linkedin.com/company/yourmateagency",
+        "https://www.instagram.com/yourmate_agency"
+      ]
+    }
+    </script>
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .animate-blink {
+        animation: blink 0.7s infinite;
+      }
+      #hero-root {
+        height: 100vh;
+        background: #000;
+        position: relative;
+      }
+      .hero-section {
+        height: 100vh;
+        background: #000;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: calc(2.5rem + 0.5rem + 1.25rem + 1.5rem);
+      }
+      @media (max-width: 768px) {
+        .hero-section {
+          padding-left: 1.5rem;
+          justify-content: flex-start;
+          padding-top: 25vh;
+        }
+      }
+      .hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        text-align: left;
+        font-size: 40px;
+      }
+      @media (min-width: 640px) {
+        .hero-title { font-size: 44px; }
+      }
+      @media (min-width: 768px) {
+        .hero-title { font-size: 96px; }
+      }
+      @media (min-width: 1024px) {
+        .hero-title { font-size: 110px; }
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      .hero-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 0.9em;
+        background: #2D9F5E;
+        margin-left: 4px;
+        vertical-align: middle;
+      }
+      @media (min-width: 768px) {
+        .hero-cursor { width: 3px; }
+      }
+      .hero-subtext {
+        position: absolute;
+        bottom: 22%;
+        right: 12%;
+        text-align: right;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        .hero-subtext {
+          position: absolute;
+          top: 60%;
+          bottom: auto;
+          left: 1.5rem;
+          right: 1.5rem;
+          text-align: left;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <div id="hero-root"></div>
+
+    <section class="work" id="work">
+      <div class="work-inner">
+        <h2 class="work-heading">WORK</h2>
+
+        <div class="work-grid">
+          <a href="/hammond-properties" class="work-card" data-delay="0">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/pages/mobile/hammond-properties-hero-mobile.webp">
+              <img src="/pages/hammond-properties-hero.webp" alt="Hammond Properties" loading="lazy" width="1600" height="1120">
+            </picture>
+            <div class="work-card-info">
+              <h3>HAMMOND PROPERTIES</h3>
+              <p>Mallacoota's premier luxury holiday rentals</p>
+              <span class="work-card-plus">+</span>
+            </div>
+          </a>
+
+          <a href="/scallywags" class="work-card" data-delay="200">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/pages/mobile/scallywags-hero-mobile.webp">
+              <img src="/pages/scallywags-hero.webp" alt="Scallywags" loading="lazy" width="1600" height="1120">
+            </picture>
+            <div class="work-card-info">
+              <h3>SCALLYWAGS</h3>
+              <p>Where the catch of the day meets the spirit of adventure</p>
+              <span class="work-card-plus">+</span>
+            </div>
+          </a>
+
+          <a href="/studio-65" class="work-card" data-delay="400">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/pages/mobile/studio-65-hero-mobile.webp">
+              <img src="/pages/studio-65-hero.webp" alt="Studio @ 65" loading="lazy" width="1600" height="1120">
+            </picture>
+            <div class="work-card-info">
+              <h3>STUDIO @ 65</h3>
+              <p>Thoughtful cuts, colour, and care by Aimee Searl</p>
+              <span class="work-card-plus">+</span>
+            </div>
+          </a>
+
+          <a href="/mallacoota-barbie-boats" class="work-card" data-delay="600">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/pages/mobile/mallacoota-barbie-boats-hero-mobile.webp">
+              <img src="/pages/mallacoota-barbie-boats-hero.webp" alt="Mallacoota Barbie Boats" loading="lazy" width="1600" height="1120">
+            </picture>
+            <div class="work-card-info">
+              <h3>MALLACOOTA BARBIE BOATS</h3>
+              <p>Explore Mallacoota's waterways at your own pace</p>
+              <span class="work-card-plus">+</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+      <div class="about-section-divider"></div>
+      <div class="about-section-content">
+        <h2 class="about-section-heading">ABOUT</h2>
+        <p class="about-section-subheading">Your Mate Matt.</p>
+        <div class="about-section-columns">
+          <div class="about-section-photo-wrap">
+            <img src="/images/matt.webp" alt="Matt from Your Mate Agency" class="about-section-photo" loading="lazy" width="400" height="300" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="about-section-photo-placeholder" style="display:none;"></div>
+          </div>
+          <div class="about-section-text-wrap">
+            <p class="about-section-text">I'm Matt — a digital bloke based in Mallacoota, East Gippsland. I build <a href="/services" class="inline-link">websites</a>, sort out <a href="/services" class="inline-link">SEO</a>, and set up automations for small businesses across regional Victoria.</p>
+            <p class="about-section-text">No office, no team of 20, no account managers. Just me, a laptop, and a genuine interest in helping local businesses get online properly.</p>
+            <a href="/about" class="about-section-cta">More about your mate →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section" style="display:none;">
+      <div class="reviews-divider"></div>
+      <div class="reviews-content">
+        <h2 class="reviews-heading">REVIEWS</h2>
+        <p class="reviews-subheading">What my mates would say about me if you called them.</p>
+        <div class="reviews-grid" id="reviews-grid"></div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="services-divider"></div>
+
+      <div class="services-content">
+        <h2 class="services-heading">WHAT YOUR MATE DOES</h2>
+
+        <div class="services-intro">
+          <p>Not templates with your logo slapped on. Not a WordPress dashboard you are expected to figure out yourself. Actual websites that work, look good, and do what you need them to do.</p>
+
+          <p>If you want a strategy for your socials or SEO, I can help with that too. But I am not going to sell you a monthly retainer for stuff you do not need.</p>
+        </div>
+
+        <div class="how-it-works-steps">
+          <div class="step">
+            <span class="step-number">01</span>
+            <p class="step-text">You tell me what you are trying to do.</p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">02</span>
+            <p class="step-text">I tell you what it will cost.</p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">03</span>
+            <p class="step-text">I build it.</p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">04</span>
+            <p class="step-text">You get on with running your business.</p>
+          </div>
+        </div>
+
+        <a href="/services" class="services-cta">
+          See how your mate can help.
+          <svg class="services-cta-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog-preview" class="blog-preview-section">
+      <div class="blog-preview-divider"></div>
+      <div class="blog-preview-content">
+        <h2 class="blog-preview-heading">BLOG</h2>
+        <p class="blog-preview-subheading">Practical tips on websites, SEO, and digital marketing for small business.</p>
+        <div class="blog-preview-grid">
+          <a href="/blog/getting-a-website-complete-guide" class="blog-preview-card">
+            <h3>Getting a Website for Your Small Business: The Complete Guide</h3>
+            <p class="blog-preview-date">January 2026</p>
+          </a>
+          <a href="/blog/local-seo-guide-small-business" class="blog-preview-card">
+            <h3>Local SEO Guide: How to Get Found Online in Your Area</h3>
+            <p class="blog-preview-date">January 2026</p>
+          </a>
+          <a href="/blog/prepare-before-hiring-web-developer" class="blog-preview-card">
+            <h3>What to Prepare Before Hiring a Web Developer</h3>
+            <p class="blog-preview-date">February 2026</p>
+          </a>
+        </div>
+        <a href="/blog" class="blog-preview-cta">
+          Read more on the blog
+          <svg class="services-cta-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOTA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        var WORDS = ['WEBSITE', 'AI AUTOMATION', 'SEO', 'MARKETING', 'CONTENT'];
+        var TYPING_SPEED = 100;
+        var DELETING_SPEED = 50;
+        var PAUSE_AFTER_WORD = 2000;
+        var PAUSE_AFTER_DELETE = 500;
+
+        var root = document.getElementById('hero-root');
+        root.innerHTML =
+          '<section class="hero-section">' +
+            '<h1 class="sr-only">Your Website, Content, SEO & AI Automation Mate</h1>' +
+            '<div>' +
+              '<div class="hero-title" aria-hidden="true">' +
+                '<div>YOUR</div>' +
+                '<div style="min-height:1.1em"><span id="typewriter-text"></span><span class="hero-cursor animate-blink"></span></div>' +
+                '<div>MATE</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="hero-subtext">' +
+              '<div>I build what your business needs.</div>' +
+              '<div>Not what makes me more money.</div>' +
+            '</div>' +
+          '</section>';
+
+        var el = document.getElementById('typewriter-text');
+        var cursor = document.querySelector('.hero-cursor');
+
+        // Respect prefers-reduced-motion: show static first word, no animation
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          el.textContent = WORDS[0];
+          if (cursor) cursor.classList.remove('animate-blink');
+          return;
+        }
+
+        var wordIndex = 0;
+        var charIndex = 0;
+        var isDeleting = false;
+
+        function tick() {
+          var word = WORDS[wordIndex];
+          if (!isDeleting) {
+            charIndex++;
+            el.textContent = word.slice(0, charIndex);
+            if (charIndex >= word.length) {
+              setTimeout(function() { isDeleting = true; tick(); }, PAUSE_AFTER_WORD);
+              return;
+            }
+            setTimeout(tick, TYPING_SPEED);
+          } else {
+            charIndex--;
+            el.textContent = word.slice(0, charIndex);
+            if (charIndex <= 0) {
+              isDeleting = false;
+              wordIndex = (wordIndex + 1) % WORDS.length;
+              setTimeout(tick, PAUSE_AFTER_DELETE);
+              return;
+            }
+            setTimeout(tick, DELETING_SPEED);
+          }
+        }
+        tick();
+      })();
+    </script>
+    <script defer src="/main.js"></script>
+  </body>
+</html>

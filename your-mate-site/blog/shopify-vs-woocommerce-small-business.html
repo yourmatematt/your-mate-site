@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify vs WooCommerce for Small Business | Your Mate Agency</title>
+    <meta name="description" content="No-BS comparison of Shopify vs WooCommerce for Australian small businesses. Honest advice on which ecommerce platform suits your online store needs.">
+    <meta name="author" content="Matt - Your Mate Agency">
+    <link rel="canonical" href="https://yourmateagency.com.au/blog/shopify-vs-woocommerce-small-business">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta property="og:title" content="Shopify vs WooCommerce: Which Ecommerce Platform for Small Business? | Your Mate Agency">
+    <meta property="og:description" content="No-BS comparison of Shopify vs WooCommerce for Australian small businesses. Honest advice on which ecommerce platform suits your online store needs.">
+    <meta property="og:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <meta property="og:url" content="https://yourmateagency.com.au/blog/shopify-vs-woocommerce-small-business">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yourmateagency.com.au/favicon/yma-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourmateagency.com.au/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yourmateagency.com.au/blog"},
+        {"@type": "ListItem", "position": 3, "name": "Shopify vs WooCommerce for Small Business"}
+      ]
+    }
+    </script>
+    <style>
+      .post-hero {
+        background: #000000;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 5.75rem 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero {
+          padding: 100px 1.5rem 3rem;
+          min-height: 100svh;
+        }
+      }
+
+      .post-hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+      }
+
+      .post-hero-title {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-title {
+          font-size: 36px;
+        }
+      }
+
+      .post-hero-date {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        .post-hero-date {
+          font-size: 16px;
+        }
+      }
+
+      .post-section {
+        padding: 6rem 5.75rem;
+        background: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .post-section {
+          padding: 4rem 1.5rem;
+        }
+      }
+
+      .post-section--no-top {
+        padding-top: 0;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .two-column {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #000000;
+      }
+
+      .section-content {
+        max-width: 680px;
+      }
+
+      .section-content p {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .section-content p {
+          font-size: 18px;
+        }
+      }
+
+      .section-content a {
+        color: #2D9F5E;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .section-content a:hover {
+        opacity: 0.7;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 5.75rem;
+        max-width: calc(100% - 11.5rem);
+      }
+
+      @media (max-width: 768px) {
+        .section-divider {
+          margin: 0 1.5rem;
+          max-width: calc(100% - 3rem);
+        }
+      }
+
+      .back-link {
+        display: inline-block;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: #2D9F5E;
+      }
+
+      @media (max-width: 768px) {
+        .back-link {
+          font-size: 18px;
+        }
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      .comparison-table {
+        overflow-x: auto;
+        margin: 2rem 0;
+      }
+
+      .comparison-table table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .comparison-table table {
+          font-size: 16px;
+        }
+      }
+
+      .comparison-table th {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid #e0e0e0;
+        background: #000;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .comparison-table th:first-child {
+        text-align: left;
+      }
+
+      .comparison-table th:not(:first-child) {
+        text-align: center;
+      }
+
+      .comparison-table td {
+        padding: 1rem;
+        border: 1px solid #e0e0e0;
+        line-height: 1.5;
+      }
+
+      .comparison-table td:first-child {
+        font-weight: 600;
+        background: #f9f9f9;
+      }
+
+      .comparison-table td:not(:first-child) {
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .comparison-table th,
+        .comparison-table td {
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">YMA</a>
+        <div class="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
+        <a href="/news">News</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="post-hero">
+      <div class="post-hero-content">
+        <h1 class="post-hero-title">SHOPIFY VS WOOCOMMERCE: WHICH ECOMMERCE PLATFORM FOR SMALL BUSINESS?</h1>
+        <p class="post-hero-date">January 2026</p>
+        <a href="/blog/category/comparisons" class="post-category-tag" style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; color: #2D9F5E; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; transition: opacity 0.3s ease;">Comparisons</a>
+      </div>
+    </section>
+
+    <article class="blog-post-content">
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE QUICK TAKE</h2>
+        <div class="section-content">
+          <p>Look, if you just want to start selling online and don't care about getting into the technical weeds, Shopify is probably your answer. You pay monthly, they handle everything, and you get on with running your business.</p>
+          <p>If you already have WordPress, want total control, or just hate the idea of another monthly subscription, WooCommerce makes sense. It's a plugin, not a platform. More flexible, more complicated.</p>
+          <p>That's the short version. Here's the longer one.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">THE COMPARISON</h2>
+        <div class="section-content">
+          <p>Here's what actually matters when you're choosing between them.</p>
+
+          <div class="comparison-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Shopify</th>
+                  <th>WooCommerce</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Setup difficulty</td>
+                  <td>Easy — sign up and go</td>
+                  <td>Medium — needs WordPress first</td>
+                </tr>
+                <tr>
+                  <td>Monthly cost (AU)</td>
+                  <td>$49 - $449+ per month</td>
+                  <td>Free plugin + hosting ($10-50/mo)</td>
+                </tr>
+                <tr>
+                  <td>Transaction fees</td>
+                  <td>0.5-2% (unless using Shopify Payments)</td>
+                  <td>Whatever your payment gateway charges</td>
+                </tr>
+                <tr>
+                  <td>Design options</td>
+                  <td>Theme store, customisable</td>
+                  <td>Unlimited if you can code</td>
+                </tr>
+                <tr>
+                  <td>Plugins/apps</td>
+                  <td>8,000+ apps (many paid)</td>
+                  <td>59,000+ plugins (many free)</td>
+                </tr>
+                <tr>
+                  <td>Hosting included?</td>
+                  <td>Yes, automatic</td>
+                  <td>No, you sort it out</td>
+                </tr>
+                <tr>
+                  <td>Maintenance</td>
+                  <td>Shopify handles it</td>
+                  <td>You handle updates</td>
+                </tr>
+                <tr>
+                  <td>Best for</td>
+                  <td>Quick launch, simplicity</td>
+                  <td>Control, customisation, existing WordPress</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">SHOPIFY EXPLAINED</h2>
+        <div class="section-content">
+          <p>Shopify is a hosted ecommerce platform. You pay them, they give you everything you need to sell online. Simple.</p>
+          <p><strong>Australian pricing in 2026:</strong></p>
+          <p>Basic — $49/month USD (about $75 AUD). Good for most small businesses starting out.</p>
+          <p>Shopify — $149/month USD (about $230 AUD). More features, lower transaction fees.</p>
+          <p>Advanced — $449/month USD (about $690 AUD). You probably don't need this unless you're doing serious volume.</p>
+          <p><strong>What you get:</strong></p>
+          <p>Hosting, SSL certificate, shopping cart, payment processing, themes, apps, support. It's all there. You pick a theme, add your products, connect your payment gateway, and you're selling.</p>
+          <p><strong>The pros:</strong></p>
+          <p>Fast to set up. No technical knowledge needed. Shopify handles security and updates. Built-in marketing tools. Works great on mobile. Decent support if something breaks.</p>
+          <p><strong>The cons:</strong></p>
+          <p>Monthly fees add up. Transaction fees on top unless you use Shopify Payments (which doesn't support every Australian bank). Apps cost extra. Customisation is limited without coding. You're locked into their ecosystem.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WOOCOMMERCE EXPLAINED</h2>
+        <div class="section-content">
+          <p>WooCommerce is a free WordPress plugin. It turns your WordPress site into an online store. You install it, configure it, and you're responsible for the rest.</p>
+          <p><strong>What it costs:</strong></p>
+          <p>The plugin is free. But you still need hosting ($10-50/month depending on your traffic), a domain name ($15-30/year), an SSL certificate (often free with hosting), and maybe a premium theme ($50-100 once-off) and extensions for things like subscriptions or bookings.</p>
+          <p>So "free" is a bit misleading, but your ongoing costs are usually lower than Shopify if you're just running a basic store.</p>
+          <p><strong>The pros:</strong></p>
+          <p>Total control. You own everything. No transaction fees beyond what your payment gateway charges. Thousands of free plugins. Works with any WordPress theme. Scales as big as you need. Perfect if you already have a WordPress site and just want to add a shop.</p>
+          <p><strong>The cons:</strong></p>
+          <p>You're responsible for updates, security, backups, and hosting. Bit of a learning curve if you've never used WordPress. Can get slow if not set up properly. Support is community-based unless you pay for premium extensions.</p>
+          <p>And here's the thing — if something breaks, you're the one who has to fix it. Or pay someone like me to fix it.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHEN SHOPIFY WINS</h2>
+        <div class="section-content">
+          <p>Choose Shopify if you just want to sell stuff and get on with your day.</p>
+          <p>You're not technical. You don't want to be technical. You value simplicity over customisation. You're happy to pay a monthly fee to not have to think about hosting, security, or updates.</p>
+          <p>Shopify is also solid if you're selling physical products and need things like inventory management, shipping integrations, and automated tax calculations. It's all built in.</p>
+          <p>And if you're planning to grow big — like, really big — Shopify scales without you having to do much. They handle the infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHEN WOOCOMMERCE WINS</h2>
+        <div class="section-content">
+          <p>Go with WooCommerce if you already have a WordPress site. Why pay for Shopify when you can just add a shop to what you've already got?</p>
+          <p>Or if you want full control. You want to customise every detail. You're comfortable with WordPress (or willing to learn). You hate recurring fees and would rather pay a one-off cost for hosting and a theme.</p>
+          <p>WooCommerce is also better if you're selling services, subscriptions, memberships, or anything that doesn't fit the standard ecommerce model. The plugin ecosystem is huge, and there's an extension for basically everything.</p>
+          <p>And if you're selling in Australia and want to use Australian payment gateways without transaction fees, WooCommerce gives you more options.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">WHAT ABOUT SQUARE OR OTHERS?</h2>
+        <div class="section-content">
+          <p>Square Online is worth a look if you're already using Square for in-person payments. The free plan is genuinely free, and it's stupid simple to set up. But it's pretty basic.</p>
+          <p>Big Cartel is popular with artists and makers. Cheap, easy, limited. Fine for a handful of products.</p>
+          <p>Then there's Wix, Squarespace, BigCommerce — all decent options. But if you're reading this, you're probably trying to decide between the two big ones.</p>
+          <p>For most Australian small businesses, it comes down to Shopify or WooCommerce. Everything else is either too simple or too complicated.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">DO YOU EVEN NEED ECOMMERCE?</h2>
+        <div class="section-content">
+          <p>Real talk — not every business needs a full online store.</p>
+          <p>If you only sell a few products, or your customers prefer to call and order, or you mostly do custom work, you might be better off with a simple website and a contact form.</p>
+          <p>I've seen businesses spend thousands on ecommerce setups they never use. Meanwhile, they could have just listed their products on a page with a "Get a Quote" button and saved themselves the headache.</p>
+          <p>If you're a local business and most of your customers are walk-ins or phone orders, maybe you don't need Shopify or WooCommerce at all. Maybe you just need a good website that explains what you do and makes it easy to get in touch. I wrote about <a href="/blog/retail-shop-website-guide">what retail shops actually need in a website</a> if that sounds like you.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">MY ADVICE</h2>
+        <div class="section-content">
+          <p>For most small local businesses in Australia, I'd say keep it simple.</p>
+          <p>If you're starting from scratch and want to sell online, Shopify is the safer bet. Yeah, it costs more per month, but it's reliable, and you're not going to accidentally break your own store trying to install a plugin.</p>
+          <p>If you already have WordPress and you're comfortable with it, WooCommerce makes sense. Add the shop to your existing site, save the monthly fees, and keep control.</p>
+          <p>And if you're still not sure, start with the simplest thing that works. You can always migrate later. I've moved sites from Shopify to WooCommerce and back again. It's not fun, but it's doable.</p>
+          <p>Just don't overthink it. Most people spend more time choosing a platform than actually selling anything.</p>
+          <p>Need help figuring out what your website should actually cost? I wrote a breakdown of <a href="/blog/small-business-website-cost-australia">small business website costs in Australia</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <h2 class="section-label">NEED GUIDANCE?</h2>
+        <div class="section-content">
+          <p>I don't primarily build ecommerce sites, but I can point you in the right direction.</p>
+          <p>If you're trying to decide between Shopify and WooCommerce and want someone to just tell you which one makes sense for your business, I can do that. No sales pitch, just honest advice.</p>
+          <p>And if you're in East Gippsland or anywhere in regional Victoria or NSW, I can help you set it up properly so you're not still figuring it out six months from now.</p>
+          <p><a href="/contact">Get in touch here →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="post-section">
+      <div class="two-column">
+        <div></div>
+        <div class="section-content">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </section>
+
+        </article>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-location">
+            <span class="footer-static">BUILT IN</span>
+            <span class="footer-rotating" id="footer-location">MALLACOOKA</span>
+            <span class="footer-static">BY YOUR MATE</span>
+            <span class="footer-static">MATT</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-abn">ABN: 37179872328</p>
+          <a href="mailto:matt@yourmateagency.com.au" class="footer-email">matt@yourmateagency.com.au</a>
+          <a href="tel:+61478101521" class="footer-phone">0478 101 521</a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61580462158938" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/yourmate_agency/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/matthew-rowlands/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://x.com/yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L19.5 4h-2l-5.2 6.3L8 4H4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a href="https://medium.com/@matt_1225" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Medium">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@yourmateagency" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('nav-hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+
+      const footerLocations = ['MALLACOOLA', 'BAIRNSDALE', 'SALE', 'TRARALGON', 'MERIMBULA', 'BEGA', 'EAST GIPPSLAND'];
+      let footerLocationIndex = 0;
+      const footerLocationElement = document.getElementById('footer-location');
+      function rotateFooterLocation() {
+        if (!footerLocationElement) return;
+        footerLocationElement.style.opacity = '0';
+        setTimeout(() => {
+          footerLocationIndex = (footerLocationIndex + 1) % footerLocations.length;
+          footerLocationElement.textContent = footerLocations[footerLocationIndex];
+          footerLocationElement.style.opacity = '1';
+        }, 500);
+      }
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setInterval(rotateFooterLocation, 3000); }
+    </script>
+  </body>
+</html>

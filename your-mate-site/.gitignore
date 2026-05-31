@@ -27,3 +27,17 @@ dist-ssr
 
 # Local AC email drafts (not part of the deployed site)
 _ac-emails/
+
+# Throwaway scratch / inspection artifacts (PDF renders, test scripts, etc.)
+tmp/
+
+# Local-only file backups created before destructive cleanup
+_backups/
+
+# Env files — *.local above already covers .env.local; these are belt-and-braces
+.env
+.env.*
+!.env.example
+
+# Claude Code worktrees / local agent scratch — never deploy
+.claude/worktrees/

@@ -1,0 +1,21 @@
+## chat_conversations
+- id: UUID (primary key, auto-generated)
+- created_at: TIMESTAMPTZ (auto-generated)
+- updated_at: TIMESTAMPTZ (auto-generated)
+- funnel: TEXT ('website', 'seo', 'ai', 'content', or null)
+- status: TEXT ('active', 'converted', 'dead') - default 'active'
+- business_name: TEXT
+- business_type: TEXT
+- contact_name: TEXT
+- location: TEXT
+- phone: TEXT
+- email: TEXT
+- social_handle: TEXT
+- notes: TEXT
+
+## chat_messages
+- id: UUID (primary key, auto-generated)
+- conversation_id: UUID (foreign key → chat_conversations.id)
+- created_at: TIMESTAMPTZ (auto-generated)
+- role: TEXT ('user' or 'assistant')
+- content: TEXT

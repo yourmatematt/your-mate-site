@@ -1,0 +1,2 @@
+# Local-only artifacts that should never deploy to production
+_ac-emails/

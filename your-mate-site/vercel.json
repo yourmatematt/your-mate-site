@@ -1,0 +1,63 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/hammond-properties", "destination": "/project/hammond-properties", "statusCode": 301 },
+    { "source": "/scallywags", "destination": "/project/scallywags", "statusCode": 301 },
+    { "source": "/studio-65", "destination": "/project/studio-at-65", "statusCode": 301 },
+    { "source": "/barbie-boats", "destination": "/project/mallacoota-barbie-boats", "statusCode": 301 },
+    { "source": "/mallacoota-barbie-boats", "destination": "/project/mallacoota-barbie-boats", "statusCode": 301 },
+    { "source": "/contact-website", "destination": "/contact", "statusCode": 301 },
+    { "source": "/contact-seo", "destination": "/contact", "statusCode": 301 },
+    { "source": "/contact-ai", "destination": "/contact", "statusCode": 301 },
+    { "source": "/contact-content", "destination": "/contact", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/project/:slug", "destination": "/api/project/[slug]" },
+    { "source": "/api/projects/:slug", "destination": "/api/projects/[slug]" },
+    { "source": "/api/projects", "destination": "/api/projects" },
+    { "source": "/news-sitemap.xml", "destination": "/api/news-sitemap" },
+    { "source": "/sitemap-news.xml", "destination": "/api/sitemap-news" },
+    { "source": "/news/:slug", "destination": "/api/news/:slug" },
+    { "source": "/news", "destination": "/api/news" },
+    { "source": "/blog/choose-web-developer-regional-victoria", "destination": "/pages/blog/choose-web-developer-regional-victoria.html" },
+    { "source": "/blog/website-cost-gippsland", "destination": "/pages/blog/website-cost-gippsland.html" },
+    { "source": "/blog/tradies-website-2026", "destination": "/pages/blog/tradies-website-2026.html" },
+    { "source": "/blog/google-maps-local-business", "destination": "/pages/blog/google-maps-local-business.html" },
+    { "source": "/blog/tradie-website", "destination": "/pages/blog/tradie-website.html" },
+    { "source": "/blog/regional-seo", "destination": "/pages/blog/regional-seo.html" },
+    { "source": "/blog/ai-small-business", "destination": "/pages/blog/ai-small-business.html" },
+    { "source": "/blog/:slug", "destination": "/api/blog/:slug" },
+    { "source": "/blog", "destination": "/api/blog" },
+    { "source": "/api/reviews", "destination": "/api/reviews" }
+  ],
+  "functions": {
+    "api/project/[slug].ts": {
+      "includeFiles": "_project.html"
+    }
+  },
+  "headers": [
+    {
+      "source": "/blog(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate=600" }
+      ]
+    },
+    {
+      "source": "/news(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate=600" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}

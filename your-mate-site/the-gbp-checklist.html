@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Google Business Profile checklist for regional Australian small businesses — the 12 things that actually move the needle on local search rankings.">
+<meta name="robots" content="noindex, follow">
+<title>The GBP Checklist for Regional Businesses — Your Mate Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #000000;
+    background: #f5f5f5;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 4rem 3.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+
+  .brand-bar {
+    display: inline-block;
+    background: #2D9F5E;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1.25rem 0.5rem 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem 0;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: #666666;
+    margin: 0 0 2.5rem 0;
+    line-height: 1.5;
+  }
+
+  .intro {
+    font-size: 1rem;
+    color: #333333;
+    border-left: 3px solid #2D9F5E;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin: 0 0 3rem 0;
+  }
+
+  .intro p { margin: 0 0 0.75rem 0; }
+  .intro p:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3rem 0 0.5rem 0;
+    letter-spacing: -0.01em;
+  }
+
+  .section-meta {
+    font-size: 0.875rem;
+    color: #737373;
+    margin: 0 0 1.25rem 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  ul.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 0.875rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  ul.checklist li:last-child { border-bottom: none; }
+
+  ul.checklist input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px 0 0 0;
+    background: #ffffff;
+    position: relative;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  ul.checklist input[type="checkbox"]:checked {
+    background: #2D9F5E;
+    border-color: #2D9F5E;
+  }
+
+  ul.checklist input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  ul.checklist label {
+    cursor: pointer;
+    flex: 1;
+  }
+
+  ul.checklist .item-title {
+    font-weight: 600;
+    color: #000000;
+  }
+
+  ul.checklist .item-note {
+    display: block;
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 400;
+    margin-top: 0.25rem;
+  }
+
+  .why-box {
+    background: #f5f5f5;
+    border-left: 3px solid #000000;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+  }
+
+  .why-box strong { display: block; margin-bottom: 0.25rem; }
+
+  .next-step {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+
+  .next-step h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .next-step p {
+    margin: 0 0 1.5rem 0;
+    color: rgba(255,255,255,0.87);
+    line-height: 1.5;
+  }
+
+  .next-step a.cta {
+    display: inline-block;
+    background: #2D9F5E;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.875rem 1.5rem;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+  }
+
+  .next-step a.cta:hover { background: #248a4f; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    color: #737373;
+    line-height: 1.6;
+  }
+
+  footer a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #2D9F5E;
+  }
+
+  footer a:hover { color: #2D9F5E; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .page { padding: 2.5rem 1.5rem; }
+    h1 { font-size: 2rem; }
+    .subtitle { font-size: 1rem; }
+    .next-step { padding: 1.5rem; }
+  }
+
+  /* Print */
+  @media print {
+    body { background: #ffffff; font-size: 11pt; }
+    .page { box-shadow: none; max-width: 100%; padding: 1.5cm; }
+    .next-step { background: #f5f5f5; color: #000000; border: 2px solid #000000; }
+    .next-step p { color: #333333; }
+    .next-step a.cta { background: #000000; }
+    ul.checklist input[type="checkbox"] { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none; }
+    a { color: #000000; }
+    footer a { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <span class="brand-bar">YMA</span>
+
+  <h1>The Google Business Profile checklist for regional businesses</h1>
+  <p class="subtitle">12 things to fix this weekend so people in your town can actually find you on Google.</p>
+
+  <div class="intro">
+    <p>Your Google Business Profile is the single biggest free tool you have to get found by locals searching for what you do. Most regional businesses set it up once, then forget about it.</p>
+    <p>That's why a sole operator in Mallacoota can outrank actual marketing agencies for "marketing agency Gippsland" with zero ad spend — and why you can outrank bigger competitors in your town if you commit to the boring basics most people skip.</p>
+    <p>Tick each box as you go. Takes about an hour. Print it, scribble on it, do whatever works.</p>
+  </div>
+
+  <h2>1. Foundation</h2>
+  <p class="section-meta">Get these wrong and nothing else matters</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c1">
+      <label for="c1"><span class="item-title">Claim and verify your listing</span><span class="item-note">If Google doesn't trust you own the business, you can't edit anything. Search your business name on Google and look for "Own this business?"</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c2">
+      <label for="c2"><span class="item-title">Business name matches your real signage</span><span class="item-note">No keyword stuffing. "Smith Plumbing — Best Plumber Bairnsdale" gets you suspended. Just your real business name.</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c3">
+      <label for="c3"><span class="item-title">Phone, address and website all match across the web</span><span class="item-note">What's on Google must match exactly what's on your site, your invoices, and your other directory listings. Google checks for consistency.</span></label>
+    </li>
+  </ul>
+
+  <h2>2. Categories</h2>
+  <p class="section-meta">The single highest-leverage setting on your profile</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c4">
+      <label for="c4"><span class="item-title">Primary category is the most specific accurate option</span><span class="item-note">"Steakhouse" beats "Restaurant." "Roofing contractor" beats "General contractor." Google would rather rank you #1 for a specific search than 47th for a generic one.</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c5">
+      <label for="c5"><span class="item-title">Add 2–4 secondary categories for the other things you do</span><span class="item-note">Don't pad with stuff that isn't true — but don't leave money on the table either. A cafe that does catering should add "Caterer." A tradie who does emergency callouts should add "Emergency plumber" or similar.</span></label>
+    </li>
+  </ul>
+
+  <h2>3. Hours, contact &amp; description</h2>
+  <p class="section-meta">No surprises for the people trying to spend money with you</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c6">
+      <label for="c6"><span class="item-title">Hours are accurate, including special hours for holidays</span><span class="item-note">Use the "Special hours" feature for Easter, Christmas, public holidays, and any seasonal closures. Nothing kills trust like "Open" when you're actually closed.</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c7">
+      <label for="c7"><span class="item-title">Description fills the full 750 characters</span><span class="item-note">Plain English. Mention your town, what makes you different, and what people actually get when they hire you or walk through the door.</span></label>
+    </li>
+  </ul>
+
+  <h2>4. Photos</h2>
+  <p class="section-meta">This is where most regional businesses lose the click</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c8">
+      <label for="c8"><span class="item-title">Logo, cover photo and at least 10 real photos uploaded</span><span class="item-note">Real photos beat stock every time. Your shopfront, your team, your work, your van, your products. Daylight, no clutter, no people walking through the frame.</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c9">
+      <label for="c9"><span class="item-title">Add a new photo at least monthly</span><span class="item-note">Google rewards active listings. A weekly photo of recent work is the easiest signal you can send. Geo-tag photos before uploading where you can — set the location on your phone before taking the shot.</span></label>
+    </li>
+  </ul>
+
+  <h2>5. Booking, contact &amp; action links</h2>
+  <p class="section-meta">Make it stupidly easy for people to actually contact you</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c10">
+      <label for="c10"><span class="item-title">Reservation, booking or appointment link goes to your own site</span><span class="item-note">If you take bookings, the "Book online" link should point at your direct booking page — not a third-party platform that takes commission. If you don't take online bookings, point it at your contact page.</span></label>
+    </li>
+    <li>
+      <input type="checkbox" id="c11">
+      <label for="c11"><span class="item-title">Messaging turned on (and you're ready to reply)</span><span class="item-note">Lets potential customers text you directly from search results. Big trust signal. Be ready to reply within a few hours — Google demotes profiles with slow response times.</span></label>
+    </li>
+  </ul>
+
+  <div class="why-box">
+    <strong>Why this matters</strong>
+    Google now lets people book, message, and call you directly from search results without ever clicking through to your website. If your reservation link points to a third-party platform, you've just paid commission on a customer Google sent you for free. Send them to your own site every time.
+  </div>
+
+  <h2>6. Reviews, posts &amp; Q&amp;A</h2>
+  <p class="section-meta">The free real estate most regional businesses ignore</p>
+  <ul class="checklist">
+    <li>
+      <input type="checkbox" id="c12">
+      <label for="c12"><span class="item-title">Reply to every review within 48 hours, post weekly, pre-load your Q&amp;A</span><span class="item-note">Three things, one item: (1) reply to every review — good and bad — within 48 hours, by name, no copy-paste. (2) Post a GBP update at least weekly — a job photo, a tip, a special — anything fresh. (3) Add the questions people actually ask (parking, hours, payment, after-hours) to the Q&amp;A section and answer them yourself.</span></label>
+    </li>
+  </ul>
+
+  <div class="next-step">
+    <h3>Done it all? Here's what's next.</h3>
+    <p>If you've ticked every box, your Google Business Profile is now in better shape than 90% of local businesses in your town. Want me to take a look at yours and tell you the three things I'd fix first? Free, 20 minutes, no pitch.</p>
+    <a href="https://calendar.app.google/9nYnoQdALsTNo6wp6" class="cta">Book a free Digital Health Check →</a>
+  </div>
+
+  <footer>
+    <p><strong>Your Mate Agency</strong> — helping regional businesses get found online.<br>
+    Built by Matt Rowlands in Mallacoota, East Gippsland.<br>
+    <a href="mailto:matt@yourmateagency.com.au">matt@yourmateagency.com.au</a> &nbsp;·&nbsp; 0478 101 521 &nbsp;·&nbsp; <a href="https://yourmateagency.com.au">yourmateagency.com.au</a></p>
+  </footer>
+
+</main>
+</body>
+</html>

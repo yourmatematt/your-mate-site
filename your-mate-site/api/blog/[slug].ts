@@ -15,6 +15,7 @@ interface BlogPost {
   website_blog: string;
   seo_metadata: Record<string, unknown> | null;
   industry_relevance: Record<string, unknown> | null;
+  industry: string | null;
   published_at: string;
   created_at: string;
   reading_time_minutes: number | null;
@@ -387,9 +388,251 @@ function renderRelated(posts: BlogPost[], currentId: string): string {
       </div>`;
 }
 
-function renderCta(): string {
+// Industries that map to a GBP checklist PDF (keys must match
+// CHECKLIST_BY_INDUSTRY in api/checklist-request.ts).
+const CHECKLIST_INDUSTRIES = [
+  'accommodation',
+  'restaurant',
+  'retail',
+  'seafood',
+  'professional',
+  'market',
+] as const;
+type ChecklistIndustry = typeof CHECKLIST_INDUSTRIES[number];
+
+const INDUSTRY_HEADING_LABEL: Record<ChecklistIndustry, string> = {
+  accommodation: 'accommodation',
+  restaurant: 'cafe & restaurant',
+  retail: 'retail shop',
+  seafood: 'fishing & seafood',
+  professional: 'professional services',
+  market: 'market vendor',
+};
+
+const INDUSTRY_OPTION_LABEL: Record<ChecklistIndustry, string> = {
+  accommodation: 'Accommodation / motel / B&B',
+  restaurant: 'Cafe or restaurant',
+  retail: 'Retail shop',
+  seafood: 'Fishing charter or seafood',
+  professional: 'Professional or trade services',
+  market: 'Market stall or vendor',
+};
+
+const CHECKLIST_CTA_STYLES = `
+<style>
+  .gbp-cl-section { background: #f5f5f5; padding: 3rem 1.5rem; margin: 40px 0 0; border-radius: 12px; }
+  .gbp-cl-card { max-width: 880px; margin: 0 auto; background: #ffffff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 30px rgba(0,0,0,0.06); }
+  @media (max-width: 768px) { .gbp-cl-card { padding: 1.75rem 1.25rem; border-radius: 8px; } .gbp-cl-section { padding: 2rem 0.5rem; } }
+  .gbp-cl-text { margin-bottom: 1.75rem; }
+  .gbp-cl-eyebrow { display: inline-block; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: #2D9F5E; margin-bottom: 1rem; }
+  .gbp-cl-heading { font-family: 'Inter', sans-serif; font-size: clamp(24px, 3.5vw, 34px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; color: #000000; margin: 0 0 0.85rem 0; }
+  .gbp-cl-sub { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; color: #333333; margin: 0; }
+  .gbp-cl-form { display: flex; flex-direction: column; gap: 1rem; }
+  .gbp-cl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 600px) { .gbp-cl-row { grid-template-columns: 1fr; } }
+  .gbp-cl-field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .gbp-cl-field > span { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: #000000; letter-spacing: 0.02em; }
+  .gbp-cl-field input, .gbp-cl-field select { font-family: 'Inter', sans-serif; font-size: 16px; padding: 0.75rem 0.9rem; border: 1.5px solid #d4d4d4; border-radius: 6px; background: #ffffff; color: #000000; transition: border-color 0.15s ease; }
+  .gbp-cl-field input:focus, .gbp-cl-field select:focus { outline: none; border-color: #2D9F5E; }
+  .gbp-cl-hp { position: absolute; left: -9999px; opacity: 0; pointer-events: none; height: 0; width: 0; overflow: hidden; }
+  .gbp-cl-submit { background: #000000; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; padding: 0.9rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; transition: background 0.2s ease; margin-top: 0.5rem; }
+  .gbp-cl-submit:hover { background: #333333; }
+  .gbp-cl-submit:disabled { background: #737373; cursor: not-allowed; }
+  .gbp-cl-error { background: #fef2f2; color: #991b1b; border-left: 3px solid #dc2626; padding: 0.75rem 1rem; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 4px; }
+  .gbp-cl-error a { color: #991b1b; text-decoration: underline; }
+  .gbp-cl-fineprint { font-family: 'Inter', sans-serif; font-size: 13px; color: #737373; line-height: 1.5; margin: 0.25rem 0 0 0; }
+  .gbp-cl-success h3 { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700; color: #000000; margin: 0 0 0.75rem 0; letter-spacing: -0.01em; }
+  .gbp-cl-success p { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; color: #333333; margin: 0; }
+</style>`;
+
+function renderChecklistIndustryControl(industryKey: ChecklistIndustry | null): string {
+  if (industryKey) {
+    return `<input type="hidden" id="gbp-cl-industry" name="industry" value="${industryKey}">`;
+  }
+  const options = CHECKLIST_INDUSTRIES.map(
+    (key) => `<option value="${key}">${esc(INDUSTRY_OPTION_LABEL[key])}</option>`
+  ).join('');
   return `
-        <div style="background:#1a1a1a;border-left:4px solid #2D9F5E;padding:24px 28px;border-radius:8px;margin:40px 0 0">
+          <label class="gbp-cl-field">
+            <span>Your industry</span>
+            <select id="gbp-cl-industry" name="industry" required>
+              <option value="" disabled selected>Pick your industry\u2026</option>
+              ${options}
+              <option value="something_else">Something else</option>
+            </select>
+          </label>`;
+}
+
+function renderChecklistCta(industryRaw: string | null): string {
+  const industryKey: ChecklistIndustry | null =
+    industryRaw && (CHECKLIST_INDUSTRIES as readonly string[]).includes(industryRaw)
+      ? (industryRaw as ChecklistIndustry)
+      : null;
+
+  const headingHtml = industryKey
+    ? `Get the ${esc(INDUSTRY_HEADING_LABEL[industryKey])} GBP checklist`
+    : 'Get the free GBP checklist for your industry';
+
+  const subHtml = industryKey
+    ? 'A free PDF with the exact fixes I\u2019d make to your Google Business Profile \u2014 so you get found by people searching locally. Plain English, takes about an hour to work through.'
+    : 'A free PDF with the exact fixes I\u2019d make to your Google Business Profile \u2014 written for your industry. Pick yours below.';
+
+  const defaultBtn = 'Email me the checklist \u2192';
+  const calendarUrl = 'https://calendar.app.google/9nYnoQdALsTNo6wp6';
+
+  return `
+        ${CHECKLIST_CTA_STYLES}
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+        <section class="gbp-cl-section" id="get-the-checklist">
+          <div class="gbp-cl-card">
+            <div class="gbp-cl-text">
+              <span class="gbp-cl-eyebrow">FREE PDF \u00b7 4 PAGES \u00b7 NO SPAM</span>
+              <h2 class="gbp-cl-heading">${headingHtml}</h2>
+              <p class="gbp-cl-sub">${subHtml}</p>
+            </div>
+            <form id="gbp-cl-form" class="gbp-cl-form" novalidate>
+              <div class="gbp-cl-row">
+                <label class="gbp-cl-field">
+                  <span>First name</span>
+                  <input type="text" id="gbp-cl-first-name" name="first_name" autocomplete="given-name" required>
+                </label>
+                <label class="gbp-cl-field">
+                  <span>Business name</span>
+                  <input type="text" id="gbp-cl-business-name" name="business_name" autocomplete="organization" required>
+                </label>
+              </div>
+              <div class="gbp-cl-row">
+                <label class="gbp-cl-field">
+                  <span>Town or postcode</span>
+                  <input type="text" id="gbp-cl-town" name="town_postcode" autocomplete="postal-code" required>
+                </label>
+                <label class="gbp-cl-field">
+                  <span>Email</span>
+                  <input type="email" id="gbp-cl-email" name="email" autocomplete="email" required>
+                </label>
+              </div>
+
+              ${renderChecklistIndustryControl(industryKey)}
+
+              <div class="gbp-cl-hp" aria-hidden="true">
+                <label for="gbp-cl-website">Leave this empty</label>
+                <input type="text" id="gbp-cl-website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADCt8xFxs6ZqjfTF" data-theme="light"></div>
+
+              <button type="submit" class="gbp-cl-submit" id="gbp-cl-submit">${defaultBtn}</button>
+              <div id="gbp-cl-error" class="gbp-cl-error" style="display:none;"></div>
+              <p class="gbp-cl-fineprint">I\u2019ll send the PDF straight to your inbox. No newsletter, no follow-up sequence \u2014 just the checklist. Reply if you\u2019ve got questions.</p>
+            </form>
+            <div id="gbp-cl-success" class="gbp-cl-success" style="display:none;">
+              <h3>Onya \u2014 check your inbox.</h3>
+              <p>It\u2019ll land in the next minute or two from <strong>matt@yourmateagency.com.au</strong>. If it\u2019s not there, check your spam folder, then reply to any other email and I\u2019ll resend it.</p>
+            </div>
+          </div>
+        </section>
+
+        <script>
+          (function () {
+            var form = document.getElementById('gbp-cl-form');
+            if (!form) return;
+            var submitBtn = document.getElementById('gbp-cl-submit');
+            var errorEl = document.getElementById('gbp-cl-error');
+            var successEl = document.getElementById('gbp-cl-success');
+            var industryEl = document.getElementById('gbp-cl-industry');
+            var pageLoadTime = Date.now();
+            var defaultBtnText = ${JSON.stringify(defaultBtn)};
+            var bookBtnText = 'Book a quick call \u2192';
+            var calendarUrl = ${JSON.stringify(calendarUrl)};
+
+            function isSomethingElse() {
+              return industryEl && industryEl.tagName === 'SELECT' && industryEl.value === 'something_else';
+            }
+
+            function syncSubmitLabel() {
+              if (!submitBtn) return;
+              submitBtn.textContent = isSomethingElse() ? bookBtnText : defaultBtnText;
+            }
+
+            if (industryEl && industryEl.tagName === 'SELECT') {
+              industryEl.addEventListener('change', syncSubmitLabel);
+              syncSubmitLabel();
+            }
+
+            form.addEventListener('submit', async function (e) {
+              e.preventDefault();
+              errorEl.style.display = 'none';
+
+              if (isSomethingElse()) {
+                window.location.href = calendarUrl;
+                return;
+              }
+
+              submitBtn.disabled = true;
+              submitBtn.textContent = 'Sending\u2026';
+
+              var turnstileToken = '';
+              var tsField = form.querySelector('input[name="cf-turnstile-response"]');
+              if (tsField) turnstileToken = tsField.value;
+
+              var industryValue = industryEl ? industryEl.value : '';
+
+              var payload = {
+                first_name: document.getElementById('gbp-cl-first-name').value.trim(),
+                business_name: document.getElementById('gbp-cl-business-name').value.trim(),
+                town_postcode: document.getElementById('gbp-cl-town').value.trim(),
+                email: document.getElementById('gbp-cl-email').value.trim(),
+                industry: industryValue,
+                website: document.getElementById('gbp-cl-website').value,
+                pageLoadTime: pageLoadTime,
+                turnstileToken: turnstileToken,
+              };
+
+              if (!payload.first_name || !payload.business_name || !payload.town_postcode || !payload.email || !payload.industry) {
+                errorEl.textContent = 'Please fill in all fields.';
+                errorEl.style.display = 'block';
+                submitBtn.disabled = false;
+                syncSubmitLabel();
+                return;
+              }
+
+              if (!payload.turnstileToken) {
+                errorEl.textContent = 'Please complete the security check.';
+                errorEl.style.display = 'block';
+                submitBtn.disabled = false;
+                syncSubmitLabel();
+                return;
+              }
+
+              try {
+                var resp = await fetch('/api/checklist-request', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(payload),
+                });
+                if (!resp.ok) throw new Error('Request failed: ' + resp.status);
+                form.style.display = 'none';
+                successEl.style.display = 'block';
+              } catch (err) {
+                errorEl.innerHTML = 'Something went wrong \u2014 try emailing me directly at <a href="mailto:matt@yourmateagency.com.au">matt@yourmateagency.com.au</a> and I\\'ll send the checklist through manually.';
+                errorEl.style.display = 'block';
+                submitBtn.disabled = false;
+                syncSubmitLabel();
+                if (window.turnstile) {
+                  try { window.turnstile.reset(); } catch (e) {}
+                }
+              }
+            });
+          })();
+        </script>`;
+}
+
+function renderCta(industryRaw: string | null): string {
+  return `
+        ${renderChecklistCta(industryRaw)}
+
+        <div style="background:#1a1a1a;border-left:4px solid #2D9F5E;padding:24px 28px;border-radius:8px;margin:32px 0 0">
           <p style="font-size:20px;font-weight:700;color:#ffffff;margin:0 0 8px">Want your free Digital Footprint Report?</p>
           <p style="font-size:16px;color:#d1d5db;margin:0 0 16px;line-height:1.6">I'll run the same audit on your business \u2014 takes 5 minutes, no strings attached. You'll get your score, a breakdown of what's working, and quick wins you can action straight away.</p>
           <a href="/contact" style="display:inline-block;background:#2D9F5E;color:#ffffff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:500">Get your free report \u2192</a>
@@ -420,7 +663,7 @@ ${renderHead(post, slug)}
   <div class="blog-article-layout">
     <main class="blog-article-body">
       ${post.website_blog}
-      ${renderCta()}
+      ${renderCta(post.industry)}
     </main>
 
     <aside class="blog-sidebar">
@@ -517,7 +760,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const [postResult, relatedResult] = await Promise.all([
       supabase
         .from('blog_posts')
-        .select('id, website_blog, seo_metadata, industry_relevance, published_at, created_at, reading_time_minutes, word_count')
+        .select('id, website_blog, seo_metadata, industry_relevance, industry, published_at, created_at, reading_time_minutes, word_count')
         .eq('status', 'published')
         .not('website_blog', 'is', null)
         .filter('seo_metadata->>url_slug', 'eq', requestSlug)

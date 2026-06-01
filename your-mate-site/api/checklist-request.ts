@@ -12,6 +12,10 @@ const CHECKLIST_BY_INDUSTRY: Record<string, { url: string; label: string }> = {
     url: 'https://yourmateagency.com.au/downloads/gbp-checklist.pdf',
     label: 'GBP Checklist for Accommodation Operators',
   },
+  restaurant: {
+    url: 'https://yourmateagency.com.au/downloads/gbp-checklist-restaurant.pdf',
+    label: 'GBP Checklist for Cafés & Restaurants',
+  },
 };
 
 interface ChecklistRequestBody {

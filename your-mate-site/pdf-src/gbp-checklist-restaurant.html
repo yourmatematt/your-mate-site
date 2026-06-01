@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>The GBP Checklist for Cafés &amp; Restaurants — Your Mate Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     PRINT SETUP
+     ============================================================ */
+  @page {
+    size: A4;
+    margin: 18mm 18mm 18mm 18mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    box-sizing: border-box;
+  }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #000000;
+    background: #ffffff;
+    font-size: 11pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============================================================
+     HEADER (badge + title + subtitle + intro)
+     ============================================================ */
+  .badge {
+    display: inline-block;
+    background: #2D9F5E;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 0.05em;
+    padding: 0.45rem 1.1rem;
+    margin: 0 0 1.6rem 0;
+  }
+
+  h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem 0;
+    color: #000000;
+  }
+
+  .subtitle {
+    font-size: 11pt;
+    color: #666666;
+    margin: 0 0 1.6rem 0;
+    line-height: 1.5;
+  }
+
+  .intro {
+    border-left: 3px solid #2D9F5E;
+    padding: 0.1rem 0 0.1rem 1.1rem;
+    margin: 0 0 1.8rem 0;
+    font-size: 10.5pt;
+    color: #333333;
+    line-height: 1.55;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .intro p { margin: 0 0 0.6rem 0; }
+  .intro p:last-child { margin: 0; }
+
+  /* ============================================================
+     SECTIONS
+     ============================================================ */
+  .section {
+    margin: 1.6rem 0 0 0;
+  }
+
+  .section h2 {
+    font-size: 15pt;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.01em;
+    color: #000000;
+    /* Heading must never strand at the bottom of a page */
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .meta {
+    font-size: 8.5pt;
+    color: #737373;
+    margin: 0 0 0.8rem 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Sub-label clings to its checklist */
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Pin heading + sub-label + first item together so a section
+     can never open with just a heading at the page bottom */
+  .section-start {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* ============================================================
+     CHECKLIST ITEMS — every item is unbreakable
+     ============================================================ */
+  ul.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  ul.checklist li:last-child { border-bottom: none; }
+
+  .checkbox {
+    flex-shrink: 0;
+    width: 13pt;
+    height: 13pt;
+    border: 1.4pt solid #000000;
+    border-radius: 3px;
+    margin-top: 2pt;
+    background: #ffffff;
+  }
+
+  .item-content { flex: 1; min-width: 0; }
+  .item-title {
+    display: block;
+    font-weight: 600;
+    color: #000000;
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+  .item-desc {
+    display: block;
+    font-size: 10pt;
+    color: #666666;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    line-height: 1.5;
+  }
+
+  /* ============================================================
+     "WHY THIS MATTERS" CALLOUT
+     ============================================================ */
+  .why-box {
+    background: #f5f5f5;
+    border-left: 3px solid #000000;
+    padding: 0.95rem 1.15rem;
+    margin: 1.4rem 0 0 0;
+    font-size: 10pt;
+    color: #333333;
+    line-height: 1.55;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .why-box strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    color: #000000;
+    font-size: 10.5pt;
+  }
+
+  /* ============================================================
+     TAIL GROUP — CTA + footer kept together
+     so the contact line never orphans onto a near-empty trailing page
+     ============================================================ */
+  .tail-group {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-top: 2rem;
+  }
+
+  .next-step {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 1.6rem 1.6rem 1.7rem;
+    margin: 0 0 1.4rem 0;
+  }
+  .next-step h3 {
+    margin: 0 0 0.6rem 0;
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #000000;
+  }
+  .next-step p {
+    margin: 0 0 1rem 0;
+    color: #333333;
+    line-height: 1.55;
+    font-size: 10.5pt;
+  }
+  .next-step a.cta {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    font-size: 10pt;
+    margin: 0 0.55rem 0.4rem 0;
+  }
+  .next-step a.cta:last-child { margin-right: 0; }
+
+  footer {
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 9pt;
+    color: #737373;
+    line-height: 1.6;
+  }
+  footer p { margin: 0; }
+  footer strong { color: #000000; font-weight: 700; }
+  footer a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #2D9F5E;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <span class="badge">YMA</span>
+
+  <h1>The Google Business Profile Checklist for Cafés &amp; Restaurants</h1>
+  <p class="subtitle">25 things to fix on your Google listing so customers walk in and order direct — not through UberEats.</p>
+
+  <div class="intro">
+    <p>UberEats, DoorDash and Menulog charge you 25&ndash;35% per order. On a $50 dinner that's $15 out the door before you've paid for ingredients, staff or rent.</p>
+    <p>Your Google Business Profile is the single biggest free tool you have to win those customers back &mdash; in the door or ordering direct. This checklist fixes the bits most operators get wrong. Takes about an hour. Print it, tick each box as you go.</p>
+  </div>
+
+  <!-- ====================================================================
+       1. FOUNDATION (5 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>1. Foundation</h2>
+      <p class="meta">THE BASICS &mdash; GET THESE WRONG AND NOTHING ELSE MATTERS</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Claim and verify your listing</span>
+            <span class="item-desc">If Google doesn't trust you own the business, you can't edit anything. Search your business name on Google and look for "Own this business?"</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Business name matches your real signage</span>
+          <span class="item-desc">No keyword stuffing. "Joe's Pizza Best Pizza Bairnsdale" gets you suspended. Just your real venue name.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Address is correct and consistent</span>
+          <span class="item-desc">It must match exactly what's on your website, your menu, your invoices, and any directory or delivery-app listings.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Phone number is your direct line</span>
+          <span class="item-desc">Not a UberEats forwarding number, not a third-party reservation line. The number you answer when it rings on the bench.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Website link points to your own site</span>
+          <span class="item-desc">Not your UberEats or DoorDash page. Your own domain, your own menu, your own booking page if you have one.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       2. CATEGORIES & ATTRIBUTES (4 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>2. Categories &amp; Attributes</h2>
+      <p class="meta">TELL GOOGLE EXACTLY WHAT YOU ARE</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Primary category set correctly</span>
+            <span class="item-desc">"Cafe," "Italian restaurant," "Pizza restaurant," "Bakery," "Brunch restaurant," "Coffee shop" &mdash; pick the most specific one. "Steakhouse" beats "Restaurant" every time.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Add 2&ndash;4 secondary categories</span>
+          <span class="item-desc">Add things like "Coffee shop," "Takeout restaurant," "Catering service," "Wine bar," "Breakfast restaurant" if they apply. Don't pad with stuff that isn't true.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Tick every relevant dining attribute</span>
+          <span class="item-desc">Dine-in, takeaway, delivery, outdoor seating, accepts reservations, good for groups, kids menu, dog-friendly &mdash; customers filter searches by these.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Set accessibility attributes honestly</span>
+          <span class="item-desc">Step-free entrance, accessible parking, accessible restroom, gender-neutral toilet. Diners actively search for these.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       3. HOURS & CONTACT (3 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>3. Hours &amp; Contact</h2>
+      <p class="meta">NO SURPRISES FOR HUNGRY PEOPLE</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Trading hours match the kitchen, not just the door</span>
+            <span class="item-desc">If the kitchen closes 30 minutes before the venue, set the closing time to when last orders go in. Nothing tanks a review like a 9pm walk-in who's told "kitchen's closed."</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Public holidays and seasonal closures added</span>
+          <span class="item-desc">Use the "Special hours" feature for Christmas, Easter, Anzac Day, off-season closures. "Open" when you're actually shut is the fastest way to a 1-star.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Description fills the full 750 characters</span>
+          <span class="item-desc">Plain English. Mention your cuisine, your town, what makes you different, whether you take walk-ins or need a booking.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       4. MENU (3 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>4. Menu</h2>
+      <p class="meta">PEOPLE SEARCH "[YOUR TOWN] MENU" CONSTANTLY &mdash; SHOW UP FOR IT</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Menu uploaded directly to your GBP &mdash; and current</span>
+            <span class="item-desc">In your GBP dashboard, add menu items by section (Mains, Sides, Drinks). Stale menus &mdash; old prices, missing dishes, removed specials &mdash; get you bad reviews. Update it whenever you re-price.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Menu link + price range ($/$$/$$$) point to your own site</span>
+          <span class="item-desc">Not your UberEats menu &mdash; your own menu page (a clean PDF works if you don't have one yet). Set the price-range attribute honestly so diners filter you in, not out.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       5. PHOTOS (4 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>5. Photos</h2>
+      <p class="meta">FOOD SELLS &mdash; THIS IS WHERE MOST OPERATORS LOSE THE WALK-IN</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">10+ hero food shots, well-lit, no filters</span>
+            <span class="item-desc">Top sellers and signature dishes. Natural daylight near a window, plate styled, no harsh phone flash. Diners decide on the photo before they read a word of menu.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Interior shots showing ambiance and seating</span>
+          <span class="item-desc">Empty room daytime shot, busy night shot (lights on, candles, people enjoying themselves at a distance &mdash; not faces). Show the vibe people are paying for.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Exterior + signage shot from the street, refreshed monthly</span>
+          <span class="item-desc">Daylight, no cars blocking the door &mdash; so drivers and walk-ins recognise the place. Add a fresh photo (new special, seasonal dish) at least monthly; Google rewards active listings.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       6. DIRECT RESERVATIONS & ONLINE ORDERING (3 items + why-box)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>6. Direct Reservations &amp; Online Ordering</h2>
+      <p class="meta">WHERE THE 30% COMMISSION SAVINGS ACTUALLY HAPPEN</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Reservation link goes to your own booking page</span>
+            <span class="item-desc">In the GBP dashboard, set "Reservations" to your direct booking URL &mdash; not OpenTable, not a third-party reservation platform that takes a per-cover fee.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Order link goes to your own ordering page (not UberEats)</span>
+          <span class="item-desc">If you do takeaway or delivery, set the "Order online" link to your own ordering page. Even a simple "Call to order" tel: link beats sending Google traffic to a 30%-commission middleman.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Messaging turned on (and someone's watching it)</span>
+          <span class="item-desc">Lets diners text you from search to ask about bookings, dietary requirements, dogs. Big trust signal. Be ready to reply within an hour during trading.</span>
+        </div>
+      </li>
+    </ul>
+
+    <div class="why-box">
+      <strong>Why this matters</strong>
+      Google now lets diners book, message and order from search results without ever clicking through to your site. If your order link points at UberEats, you've just paid 30% commission on a customer Google sent you for free. Send them to your own site or your own number every single time.
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       7. REVIEWS, POSTS & Q&A (5 items)
+       ==================================================================== -->
+  <section class="section">
+    <div class="section-start">
+      <h2>7. Reviews, Posts &amp; Q&amp;A</h2>
+      <p class="meta">THE ONGOING WORK THAT KEEPS YOU AHEAD OF QUIETER COMPETITORS</p>
+      <ul class="checklist">
+        <li>
+          <div class="checkbox"></div>
+          <div class="item-content">
+            <span class="item-title">Reply to every review &mdash; good and bad</span>
+            <span class="item-desc">Within 48 hours. By name, personalised, never copy-paste. A polite, professional reply to a 2-star wins more new diners than the bad review costs.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="checklist">
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Set up a review request system</span>
+          <span class="item-desc">A small card on the table, a QR sticker on the EFTPOS machine, or a follow-up email after a booking &mdash; with your direct Google review link on it. Aim for one new review per week.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Get your short Google review link</span>
+          <span class="item-desc">In your GBP dashboard, click "Ask for reviews" &mdash; copy that short link, save it, print it on the table cards.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Post an update every 2&ndash;4 weeks</span>
+          <span class="item-desc">A new special, a seasonal menu, a function announcement, a great photo from last weekend. Counts as a fresh signal to Google and shows up directly in your listing.</span>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <span class="item-title">Pre-load the Q&amp;A section</span>
+          <span class="item-desc">Add the questions diners actually ask &mdash; parking, BYO, kids welcome, dog-friendly, gluten-free, set-menu pricing &mdash; and answer them yourself. Saves you replying 50 times.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================================================================
+       TAIL — CTA + Footer kept together (no orphan trailing page)
+       ==================================================================== -->
+  <div class="tail-group">
+    <div class="next-step">
+      <h3>Done it all? Here's what's next.</h3>
+      <p>If you've ticked every box, your Google Business Profile is now in better shape than 95% of cafés and restaurants in your town. Want a hand keeping more of those customers direct instead of handing 25&ndash;35% to UberEats? Get in touch &mdash; find me on Facebook or Instagram as Your Mate Agency, or my email and number are right below.</p>
+    </div>
+
+    <footer>
+      <p><strong>Your Mate Agency</strong> &mdash; helping regional businesses get found online.<br>
+      Built by Matt Rowlands in Mallacoota, East Gippsland.<br>
+      <a href="mailto:matt@yourmateagency.com.au">matt@yourmateagency.com.au</a>&nbsp;&middot;&nbsp;0478 101 521&nbsp;&middot;&nbsp;<a href="https://yourmateagency.com.au/">yourmateagency.com.au</a></p>
+    </footer>
+  </div>
+
+</main>
+</body>
+</html>

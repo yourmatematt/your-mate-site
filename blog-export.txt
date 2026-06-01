@@ -1,0 +1,65 @@
+# Website Speed - Why Slow Sites Lose Customers
+
+January 2026
+
+
+THE REALITY
+
+Your website takes 8 seconds to load. The tradie down the road? Their site loads in 2. Guess who's getting the call when someone's kitchen tap is flooding at 9pm on a Tuesday.
+
+Here's the brutal truth: nobody waits anymore. Your potential customers are on their phones, probably standing in your competitor's shop right now, comparing options. If your website is still thinking about loading while the next result is already showing quotes, you've lost. Not maybe lost. Definitely lost.
+
+This isn't about having the fanciest website. It's about not losing customers before they even see what you offer.
+
+
+THE NUMBERS
+
+Google found that 53% of mobile users bail if a site takes longer than 3 seconds to load. Three seconds. That's barely enough time to blink twice. And in regional Australia where mobile coverage can be patchy? Every millisecond counts even more.
+
+Here's another kick: Google uses site speed as a ranking factor. Slow website? You're getting pushed down in search results. So not only are you losing the people who do find you, you're also being shown to fewer people in the first place. It's a double whammy.
+
+When someone searches for "emergency plumber Bairnsdale" or "cafe near me Sale," speed isn't a nice-to-have. It's the difference between getting the job or not.
+
+
+WHAT SLOWS SITES DOWN
+
+Massive photos are usually the biggest culprit. Someone takes a 5MB image straight from their phone, uploads it to their website, and wonders why things crawl. That hero image of your shopfront? If it's not optimized, it's murdering your load time.
+
+Cheap hosting is another killer. Five bucks a month sounds great until you realize your site shares a server with 500 others, and when things get busy, you're all fighting for scraps. It's like trying to run a business on dial-up internet.
+
+Website builders like Wix or Squarespace can work fine, but they can also bloat your site with code you don't need. Add 15 plugins because they looked cool, throw in some fancy animations, and suddenly your simple five-page website is carrying more baggage than an international flight.
+
+And if your site hasn't been updated in years? All that old code is probably doing you no favours either.
+
+
+THE REAL COST
+
+Google is pretty clear: faster sites rank better. They want to send people to websites that actually load. If your competitor's site is faster, Google is more likely to show them first. You could have better reviews, better prices, better everything — but if your site is slow, you're starting ten steps behind.
+
+Then there's the conversion problem. Let's say you're an electrician in Traralgon. Someone finds your site, but it takes 7 seconds to load. Half of them are already gone. The ones who stick around are frustrated before they even read a word. By the time your "Call Now" button appears, they've already called someone else.
+
+And it compounds. Slow site means worse Google ranking means fewer visitors means fewer customers. Just like having a mobile-friendly site, speed is non-negotiable in 2026.
+
+
+WHAT YOU CAN DO
+
+First, test your actual speed. Go to PageSpeed Insights (just Google it), put in your website address, and see what you're dealing with. It'll tell you exactly what's slow and what to fix. Don't panic if the numbers are rough — at least you'll know.
+
+Talk to your developer or whoever built your site. Ask them specifically about image optimization, caching, and hosting quality. If they look at you blankly, that's a red flag. These are basic things any decent web person should understand.
+
+If you manage your own site, start with the images. There are free tools like TinyPNG that'll compress images without making them look garbage. Before you upload any photo, run it through a compressor. Delete plugins and add-ons you don't actually use.
+
+If you're on a $5 hosting plan, consider upgrading. Spending an extra $20-30 a month for decent hosting is nothing compared to the customers you're losing.
+
+
+THE BOTTOM LINE
+
+Your website speed isn't a technical detail. It's a business-critical issue that's either making you money or costing you money right now. Every second your site takes to load is a chance for customers to leave.
+
+The good news? This is fixable. Unlike some business problems, slow website speed has clear solutions. You don't need a complete rebuild. Usually, you need optimized images, decent hosting, and some cleanup.
+
+Stop losing customers to the loading spinner. Test your speed today, fix what's broken, and your business will be better for it. If you're not sure where to start, have a chat — I'm happy to take a look and point you in the right direction.
+
+
+---
+Originally published at yourmateagency.com.au/blog/website-speed-slow-sites-lose-customers

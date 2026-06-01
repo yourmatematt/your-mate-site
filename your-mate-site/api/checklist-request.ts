@@ -16,6 +16,22 @@ const CHECKLIST_BY_INDUSTRY: Record<string, { url: string; label: string }> = {
     url: 'https://yourmateagency.com.au/downloads/gbp-checklist-restaurant.pdf',
     label: 'GBP Checklist for Cafés & Restaurants',
   },
+  retail: {
+    url: 'https://yourmateagency.com.au/downloads/gbp-checklist-retail.pdf',
+    label: 'GBP Checklist for Retail Shops',
+  },
+  seafood: {
+    url: 'https://yourmateagency.com.au/downloads/gbp-checklist-seafood.pdf',
+    label: 'GBP Checklist for Fishing Charters & Seafood',
+  },
+  professional: {
+    url: 'https://yourmateagency.com.au/downloads/gbp-checklist-professional.pdf',
+    label: 'GBP Checklist for Professional & Trade Services',
+  },
+  market: {
+    url: 'https://yourmateagency.com.au/downloads/gbp-checklist-market.pdf',
+    label: 'GBP Checklist for Market Stalls & Vendors',
+  },
 };
 
 interface ChecklistRequestBody {

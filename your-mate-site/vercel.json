@@ -12,14 +12,13 @@
     { "source": "/contact-website", "destination": "/contact", "statusCode": 301 },
     { "source": "/contact-seo", "destination": "/contact", "statusCode": 301 },
     { "source": "/contact-ai", "destination": "/contact", "statusCode": 301 },
-    { "source": "/contact-content", "destination": "/contact", "statusCode": 301 }
+    { "source": "/contact-content", "destination": "/contact", "statusCode": 301 },
+    { "source": "/the-local-setup", "destination": "/", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/project/:slug", "destination": "/api/project/[slug]" },
     { "source": "/api/projects/:slug", "destination": "/api/projects/[slug]" },
     { "source": "/api/projects", "destination": "/api/projects" },
-    { "source": "/news-sitemap.xml", "destination": "/api/news-sitemap" },
-    { "source": "/sitemap-news.xml", "destination": "/api/sitemap-news" },
     { "source": "/news/:slug", "destination": "/api/news/:slug" },
     { "source": "/news", "destination": "/api/news" },
     { "source": "/blog/choose-web-developer-regional-victoria", "destination": "/pages/blog/choose-web-developer-regional-victoria.html" },

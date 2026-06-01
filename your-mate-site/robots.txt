@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://yourmateagency.com.au/sitemap.xml
-Sitemap: https://yourmateagency.com.au/news-sitemap.xml
-Sitemap: https://yourmateagency.com.au/sitemap-news.xml
